@@ -1,0 +1,2 @@
+Article 132 bis: Production, sale, distribution or importation products that are substandard or harmful to human being
+A person who produces, sells, distributes or imports foods, beverages, medications or other products which are substandard or which may be harmful to the human being, commits an offence. Upon conviction, he or she is liable to imprisonment for a term of not less than 3 years but not more than 5 years and a fine of not less than FRW 1,000,000 but not more than FRW 3,000,000 FRW or only one of these penalties.
