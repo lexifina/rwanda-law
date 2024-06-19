@@ -1,7 +1,8 @@
-# Article 21 bis: Maternity leave
+# Article 21 bis: Maternity and paternity leave
 Chapter: CHAPTER III: STATUTORY POSITIONS FOR A PUBLIC SERVANT
 Section: Section One: Status of a public servant
 Subsection: Subsection One: Public servant in service
 
-A female public servant who gives birth has the right to maternity leave of twelve (12) consecutive weeks including two (2) weeks she may take before delivery.
-A female public servant who wishes to take a maternity leave submits to the director of human resources a certificate of a recognized healthcare entity with a copy thereof to her immediate supervisor.
+(1) A female public servant who gives birth is entitled to a maternity leave. A male public servant whose spouse gives birth is also entitled to a paternity leave.
+(2) In case of childbirth-related complications, either for a female public servant or for her newborn, the female public servant having given birth and the male public servant whose spouse has given birth are entitled to additional leave.
+(3) An Order of the Minister determines the number of days for maternity leave, paternity leave and additional leave as well as procedures for the grant thereof to the female and male servant referred to under Paragraphs (1) and (2) of this Article.
