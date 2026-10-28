@@ -38,5 +38,6 @@
     "cites": "[Aa]rticle {n}([^0-9]|$)"
   },
   "checked_on": "2026-10-28",
-  "history": "in-force"
+  "history": "replayed",
+  "verification": "constitution/: both versions (2015 revision, 2023 revising act) are official texts. law-2020-017/: the original law is official; the three later states are replays of the amending laws 019/2020, 052/2024 and 017/2026, with no official consolidation to verify against."
 }
