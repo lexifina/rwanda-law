@@ -169,9 +169,16 @@ def structure(doc) -> dict:
     for t in texts:
         if LETTERS.search(t):
             raise ExtractError('letter-spaced text: ' + t[:80])
-    nums = [artnum(m.group(1)) for t in texts for m in [ART.match(t)] if m]
-    top = max(nums)
-    toc_end = next(i for i, t in enumerate(texts) if ART.match(t) and artnum(ART.match(t).group(1)) == top)
+    arts_at = [(i, artnum(m.group(1))) for i, t in enumerate(texts) for m in [ART.match(t)] if m]
+    ones = [i for i, n in arts_at if n == 1]
+    if len(ones) >= 2:
+        # The table of contents ends with the last article entry before the body's "Article One" (the sequence
+        # restarts). This also survives a misprinted TOC number (Law 68/2018's TOC prints "Article 2826").
+        toc_end = max(i for i, n in arts_at if i < ones[1])
+        top = max(n for i, n in arts_at if i > toc_end)
+    else:
+        top = max(n for i, n in arts_at)
+        toc_end = next(i for i, n in arts_at if n == top)
     body = paras[toc_end + 1:]
     end = next((i for i, p in enumerate(body) if SIGN.match(ptext(p))), len(body))
     signature = [ptext(p) for p in body[end:]]
