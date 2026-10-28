@@ -29,7 +29,7 @@ Needs PyMuPDF (import pymupdf).
 import re
 import statistics
 
-HEADER = re.compile(r'^Official Gazette n° Special of \d\d/\d\d/\d{4}$')
+HEADER = re.compile(r'^Official Gazette (?:n°|no\.) Special of \d\d/\d\d/\d{4}$')
 PAGE_NO = re.compile(r'^\d{1,3}$')
 ART = re.compile(r'^Arti?c?le (One|one|\d+)\s*:\s*(.*)$', re.S)
 ART_LOOSE = re.compile(r'^Arti?le (One|\d+)\s*:')
