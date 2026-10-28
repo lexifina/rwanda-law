@@ -36,5 +36,7 @@
   "citation": {
     "file": "([a-z0-9-]+)/art-0*([0-9]+)(?:-bis|-ter|-quater)?\\.md",
     "cites": "[Aa]rticle {n}([^0-9]|$)"
-  }
+  },
+  "checked_on": "2026-10-28",
+  "history": "in-force"
 }
