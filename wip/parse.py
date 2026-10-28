@@ -112,6 +112,7 @@ INSERT = re.compile(rf'^In {LAW68},? an Article (\d+) (bis|ter) is inserted whic
 SKIP = re.compile(r'^(This Law was drafted, considered and adopted in Ikinyarwanda\.|All prior legal provisions contrary '
                   r'to this Law are repealed\.|This Law comes into force on the date of its publication in the Official '
                   r'Gazette of the Republic of Rwanda\.)$')
+UNCLOSED = []
 RESTATED_HEAD = re.compile(r'^Article (\d+)(?: (bis|ter))?\s*:\s*(.+)$')
 
 
@@ -122,7 +123,8 @@ def unquote(paras: list) -> list:
         raise SystemExit('restated text without an opening quote: ' + ps[0][:80])
     ps[0] = (m.group(1) or '') + ps[0][m.end():]
     if not ps[-1].endswith('"'):
-        raise SystemExit('restated text without a closing quote: ' + ps[-1][-80:])
+        UNCLOSED.append(ps[0][:60])   # the Gazette omits the closing mark; the article ends here anyway
+        return ps
     ps[-1] = ps[-1][:-1].rstrip()
     return ps
 
@@ -347,6 +349,10 @@ def main():
             cur.pop(k, None) if u is None else cur.__setitem__(k, u)
         decisions.append(f'{label}: in force {day} ({ev}; Gazette running head). Replayed: '
                          + '; '.join(f'Art. {a} {op} {art_label(k)}' for op, k, a in ops) + '.')
+        if UNCLOSED:
+            decisions.append(f'{label}: the English text prints no closing quotation mark after the restated text '
+                             f'beginning {"; ".join(repr(u) for u in UNCLOSED)}; it ends with its article.')
+            UNCLOSED.clear()
 
     amending(4115, 'law-2019-069', 'Law n° 69/2019',
              'Law n° 69/2019 of 08/11/2019 amending Law n° 68/2018 of 30/08/2018 determining offences and penalties in '
