@@ -96,9 +96,17 @@ def gutters(pages: list, W: int) -> tuple:
             if x - start >= 4 and start > 20 and x < W - 20:
                 runs.append((start, x - 1))
             start = None
-    if len(runs) != 2:
+    merged = []
+    for r in runs:  # a gutter interrupted by a few indented list numbers ("1°") is still one gutter
+        if merged and r[0] - merged[-1][1] <= 12:
+            merged[-1] = (merged[-1][0], r[1])
+        else:
+            merged.append(r)
+    if len(merged) != 2:
         raise ExtractError(f'expected two interior gutters, found {runs}')
-    return runs[0][1], runs[1][0]
+    # The English column is everything between the outer edges of the two gutters: a word whose centre lies inside a
+    # gutter (an indented item number) belongs to the middle column, whose neighbours end before the gutter starts.
+    return merged[0][0], merged[1][1]
 
 
 def lines(doc) -> list:
