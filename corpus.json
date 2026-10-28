@@ -1,0 +1,40 @@
+{
+  "corpus": "rw/national/acts",
+  "name": "Rwandan law: the Constitution (from its 2015 revision) and the general statute governing public servants",
+  "label": "Rwanda",
+  "language": "en",
+  "acts": [
+    "constitution",
+    "law-2020-017"
+  ],
+  "history_from": "2015-12-24",
+  "record_to": "2026-04-24",
+  "record_note": "Constitution from the 2015 revision (2003-2010 texts are scans without a text layer), replaced as a whole by the 2023 revising act; Law n° 017/2020 with three amending laws replayed. English column of the trilingual Official Gazette; data retrieved 2026-10-28.",
+  "in_force_trailer": "In-force",
+  "built": "2026-10-28",
+  "dates": {
+    "commit": "in-force",
+    "other_trailers": [
+      "Published",
+      "Promulgated",
+      "Takes-effect"
+    ],
+    "time": "12:00 Africa/Kigali (UTC+2, no summer time)"
+  },
+  "scope": {
+    "trailer": null,
+    "when_absent": "no scope note is recorded in this history; not a statement that a change reaches every case",
+    "default_reach": {
+      "rule": "laws apply from publication; criminal law is not retroactive",
+      "meaning": "a law cannot enter into force before it is published; no one may be punished for an act that was not an offence when committed. A law may still state an earlier effect (Law n° 019/2020: \"takes effects as of 8 October 2020\")",
+      "authority": "Constitution of the Republic of Rwanda (2023), Article 174(1) and Article 29(1)(d); Article 138(1) (\"the principle of non- retroactivity of criminal law\")",
+      "decided_here": false
+    }
+  },
+  "replayed": true,
+  "tool": "tools/on_date.py",
+  "citation": {
+    "file": "([a-z0-9-]+)/art-0*([0-9]+)(?:-bis|-ter|-quater)?\\.md",
+    "cites": "[Aa]rticle {n}([^0-9]|$)"
+  }
+}
