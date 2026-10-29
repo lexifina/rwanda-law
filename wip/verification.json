@@ -1,25 +1,29 @@
 {
+ "check": {
+  "acts": 3,
+  "backwards": 0,
+  "future_dated": 0,
+  "merges": 0,
+  "mismatches": 0,
+  "missing_in_force": 0,
+  "trailer_errors": 0,
+  "versions": 8
+ },
  "column": [
   {
    "act": "constitution",
-   "version": 0,
-   "file": 5144,
    "clip_words": 16248,
+   "examples": [],
+   "file": 5144,
    "file_words": 14228,
    "file_words_not_in_column": 0,
-   "missing": [],
    "file_words_out_of_order": 0,
-   "examples": []
+   "missing": [],
+   "version": 0
   },
   {
    "act": "constitution",
-   "version": 1,
-   "file": 3939,
    "clip_words": 16668,
-   "file_words": 14459,
-   "file_words_not_in_column": 0,
-   "missing": [],
-   "file_words_out_of_order": 50,
    "examples": [
     [
      "",
@@ -69,35 +73,53 @@
      "",
      "environment."
     ]
-   ]
+   ],
+   "file": 3939,
+   "file_words": 14459,
+   "file_words_not_in_column": 0,
+   "file_words_out_of_order": 50,
+   "missing": [],
+   "version": 1
   },
   {
    "act": "penal-code",
-   "version": 0,
-   "file": 4119,
    "clip_words": 39056,
+   "examples": [],
+   "file": 4119,
    "file_words": 34089,
    "file_words_not_in_column": 0,
-   "missing": [],
    "file_words_out_of_order": 0,
-   "examples": []
+   "missing": [],
+   "version": 0
   },
   {
    "act": "data-protection",
-   "version": 0,
-   "file": 4116,
    "clip_words": 10212,
+   "examples": [],
+   "file": 4116,
    "file_words": 9033,
    "file_words_not_in_column": 0,
-   "missing": [],
    "file_words_out_of_order": 0,
-   "examples": []
+   "missing": [],
+   "version": 0
   }
  ],
+ "ok": true,
  "replay": [
   {
-   "law_file": 4115,
+   "changed": [
+    "art-060",
+    "art-068",
+    "art-092",
+    "art-133",
+    "art-136",
+    "art-140",
+    "art-190",
+    "art-236",
+    "art-263"
+   ],
    "from": "2019-11-29",
+   "law_file": 4115,
    "named": [
     "art-060",
     "art-068",
@@ -111,23 +133,34 @@
     "art-236",
     "art-263"
    ],
-   "changed": [
-    "art-060",
-    "art-068",
-    "art-092",
-    "art-133",
-    "art-136",
-    "art-140",
-    "art-190",
-    "art-236",
-    "art-263"
-   ],
-   "restated_equal": true,
-   "only_named_changed": true
+   "only_named_changed": true,
+   "restated_equal": true
   },
   {
-   "law_file": 4073,
+   "changed": [
+    "art-035",
+    "art-060",
+    "art-064",
+    "art-084",
+    "art-092",
+    "art-099",
+    "art-100",
+    "art-108",
+    "art-117",
+    "art-120",
+    "art-121",
+    "art-123",
+    "art-132-bis",
+    "art-133",
+    "art-152",
+    "art-172",
+    "art-177",
+    "art-262-bis",
+    "art-271",
+    "art-291"
+   ],
    "from": "2023-12-05",
+   "law_file": 4073,
    "named": [
     "art-035",
     "art-060",
@@ -151,30 +184,8 @@
     "art-271",
     "art-291"
    ],
-   "changed": [
-    "art-035",
-    "art-060",
-    "art-064",
-    "art-084",
-    "art-092",
-    "art-099",
-    "art-100",
-    "art-108",
-    "art-117",
-    "art-120",
-    "art-121",
-    "art-123",
-    "art-132-bis",
-    "art-133",
-    "art-152",
-    "art-172",
-    "art-177",
-    "art-262-bis",
-    "art-271",
-    "art-291"
-   ],
-   "restated_equal": true,
-   "only_named_changed": true
+   "only_named_changed": true,
+   "restated_equal": true
   }
  ],
  "today": {
@@ -182,7 +193,7 @@
   "constitution_files": 177,
   "data_protection_equals_2021_official": true,
   "data_protection_files": 70,
-  "penal_code_files": 333,
+  "penal_code_changed_only_by_named_events": true,
   "penal_code_changed_since_2018": [
    "art-035",
    "art-060",
@@ -214,7 +225,6 @@
    "art-271",
    "art-291"
   ],
-  "penal_code_changed_only_by_named_events": true
- },
- "ok": true
+  "penal_code_files": 333
+ }
 }
