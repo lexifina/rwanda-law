@@ -1,12 +1,261 @@
 {
- "check": {
-  "acts": 3,
-  "backwards": 0,
-  "future_dated": 0,
-  "merges": 0,
-  "mismatches": 0,
-  "missing_in_force": 0,
-  "trailer_errors": 0,
-  "versions": 8
- }
+ "column": [
+  {
+   "act": "constitution",
+   "version": 0,
+   "file": 5144,
+   "clip_words": 16250,
+   "file_words": 14228,
+   "file_words_unmatched": 0,
+   "examples": []
+  },
+  {
+   "act": "constitution",
+   "version": 1,
+   "file": 3939,
+   "clip_words": 16668,
+   "file_words": 14459,
+   "file_words_unmatched": 50,
+   "examples": [
+    [
+     "",
+     "national"
+    ],
+    [
+     "",
+     "from"
+    ],
+    [
+     "",
+     "subjected to"
+    ],
+    [
+     "",
+     "to"
+    ],
+    [
+     "",
+     "of"
+    ],
+    [
+     "",
+     "property, whether"
+    ],
+    [
+     "",
+     "collectively owned."
+    ],
+    [
+     "",
+     "whether owned"
+    ],
+    [
+     "",
+     "inviolable."
+    ],
+    [
+     "",
+     "the"
+    ],
+    [
+     "",
+     "safeguard and"
+    ],
+    [
+     "",
+     "environment."
+    ]
+   ]
+  },
+  {
+   "act": "penal-code",
+   "version": 0,
+   "file": 4119,
+   "clip_words": 39450,
+   "file_words": 34392,
+   "file_words_unmatched": 299,
+   "examples": [
+    [
+     "",
+     "1°"
+    ],
+    [
+     "",
+     "2°"
+    ],
+    [
+     "",
+     "1°"
+    ],
+    [
+     "",
+     "2°"
+    ],
+    [
+     "",
+     "3°"
+    ],
+    [
+     "",
+     "4°"
+    ],
+    [
+     "",
+     "5°"
+    ],
+    [
+     "",
+     "6°"
+    ],
+    [
+     "",
+     "7°"
+    ],
+    [
+     "",
+     "8°"
+    ],
+    [
+     "",
+     "9°"
+    ],
+    [
+     "",
+     "1°"
+    ]
+   ]
+  },
+  {
+   "act": "data-protection",
+   "version": 0,
+   "file": 4116,
+   "clip_words": 10216,
+   "file_words": 9033,
+   "file_words_unmatched": 0,
+   "examples": []
+  }
+ ],
+ "replay": [
+  {
+   "law_file": 4115,
+   "from": "2019-11-29",
+   "named": [
+    "art-060",
+    "art-068",
+    "art-092",
+    "art-133",
+    "art-136",
+    "art-140",
+    "art-154",
+    "art-190",
+    "art-233",
+    "art-236",
+    "art-263"
+   ],
+   "changed": [
+    "art-060",
+    "art-068",
+    "art-092",
+    "art-133",
+    "art-136",
+    "art-140",
+    "art-190",
+    "art-236",
+    "art-263"
+   ],
+   "restated_equal": true,
+   "only_named_changed": true
+  },
+  {
+   "law_file": 4073,
+   "from": "2023-12-05",
+   "named": [
+    "art-035",
+    "art-060",
+    "art-064",
+    "art-084",
+    "art-092",
+    "art-099",
+    "art-100",
+    "art-108",
+    "art-117",
+    "art-120",
+    "art-121",
+    "art-123",
+    "art-132-bis",
+    "art-133",
+    "art-152",
+    "art-172",
+    "art-177",
+    "art-218",
+    "art-262-bis",
+    "art-271",
+    "art-291"
+   ],
+   "changed": [
+    "art-035",
+    "art-060",
+    "art-064",
+    "art-084",
+    "art-092",
+    "art-099",
+    "art-100",
+    "art-108",
+    "art-117",
+    "art-120",
+    "art-121",
+    "art-123",
+    "art-132-bis",
+    "art-133",
+    "art-152",
+    "art-172",
+    "art-177",
+    "art-262-bis",
+    "art-271",
+    "art-291"
+   ],
+   "restated_equal": true,
+   "only_named_changed": true
+  }
+ ],
+ "today": {
+  "constitution_equals_2023_official": true,
+  "constitution_files": 177,
+  "data_protection_equals_2021_official": true,
+  "data_protection_files": 70,
+  "penal_code_files": 333,
+  "penal_code_changed_since_2018": [
+   "art-035",
+   "art-060",
+   "art-064",
+   "art-068",
+   "art-084",
+   "art-092",
+   "art-099",
+   "art-100",
+   "art-108",
+   "art-117",
+   "art-120",
+   "art-121",
+   "art-123",
+   "art-132-bis",
+   "art-133",
+   "art-136",
+   "art-140",
+   "art-152",
+   "art-154",
+   "art-172",
+   "art-177",
+   "art-190",
+   "art-218",
+   "art-233",
+   "art-236",
+   "art-262-bis",
+   "art-263",
+   "art-271",
+   "art-291"
+  ],
+  "penal_code_changed_only_by_named_events": true
+ },
+ "ok": false
 }
