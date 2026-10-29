@@ -104,9 +104,11 @@ def gutters(pages: list, W: int) -> tuple:
             merged.append(r)
     if len(merged) != 2:
         raise ExtractError(f'expected two interior gutters, found {runs}')
-    # The English column is everything between the outer edges of the two gutters: a word whose centre lies inside a
-    # gutter (an indented item number) belongs to the middle column, whose neighbours end before the gutter starts.
-    return merged[0][0], merged[1][1]
+    # The English column runs from the start of the left gutter to the start of the right one. Item numbers ("1°")
+    # hang into the gutter on the LEFT of their own column (Law 68/2018: English ones at x=315 in the left gutter,
+    # French ones at x=535 in the right gutter), so a word in the left gutter is English and one in the right gutter
+    # is French.
+    return merged[0][0], merged[1][0]
 
 
 def lines(doc) -> list:
