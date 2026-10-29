@@ -16,13 +16,17 @@ Acts
                       - Re Byansi, Supreme Court, 20 May 2022 (RLR V.4-2022): Art. 218 devoid of effects;
                       - Law n° 059/2023 of 04/12/2023 (replayed).
   data-protection/  Law n° 058/2021 of 13/10/2021 relating to the protection of personal data and privacy (unamended).
+  public-servants/  Law n° 017/2020 of 07/10/2020 establishing the general statute governing public servants, with
+                    Laws n° 019/2020, 052/2024 and 017/2026 replayed (folder law-2020-017/ in the earlier build).
 
-Replay grammar (anything else stops the parse): an amending article's first paragraph is one of
-  "Article N of [the] Law n° 68/2018 of 30/08/2018 determining offences and penalties [in general] is amended as follows:"
-  "Article N of [the] Law n° 68/2018 ... is repealed."
-  "In Law n° 68/2018 ... an Article N bis is inserted which is worded as follows:"
+Replay grammar (anything else stops the parse), for the amended law <L> (Law n° 68/2018 or Law n° 017/2020, as titled):
+an amending article's first paragraph is one of
+  "Article N [bis] of [the] <L> is amended|modified as follows:"
+  "Article N [bis] of [the] <L> is repealed."
+  "In <L>[,] [an] Article N bis is inserted which is worded as follows:" / "... is inserted to read as follows:"
 and its other paragraphs are the quoted new text. Their opening quote (at the start of the first paragraph, or after its
-"(1) ") and closing quote (at the end of the last) are removed. When the quoted text begins with "Article N: heading",
+"(1) ") and closing quote (at the end of the last, or just before its final full stop, which is kept) are removed.
+When the quoted text begins with "Article N: heading",
 that line replaces the heading; otherwise the article keeps its heading (decisions). The amending law's own language,
 general-repeal and commencement articles are recognised and skipped.
 """
@@ -90,10 +94,22 @@ def text_of(lines: list) -> str:
     return '\n'.join(norm(l) for l in lines) + '\n'
 
 
+STRUCT_HEAD = re.compile(r'^(PART|TITLE) (ONE|[IVXL]+|\d+)\s*:')
+
+
 def read_whole(fid: int, preamble: bool = False) -> tuple[dict, str, dict]:
+    """(units, sha256, structure) of a whole text: its enacting formula (the paragraphs before the first article and
+    before any PREAMBLE, as extract.py reads them, without trailing PART/TITLE headings), its preamble if asked,
+    and its articles."""
     doc, sha = pdf(fid)
     st = X.structure(doc)
     units = {}
+    enacting = list(st['enacting'])
+    while enacting and STRUCT_HEAD.match(norm(enacting[-1])):   # "PART ONE: ...", "TITLE ONE: ...": headings above
+        enacting.pop()                                          # the articles, kept out like CHAPTER/Section lines
+    if not enacting:
+        raise SystemExit(f'file {fid}: no enacting formula')
+    units['enacting-formula'] = {'label': 'Enacting formula', 'kind': 'enacting', 'text': text_of(enacting)}
     if preamble and st['preamble']:
         units['preamble'] = {'label': 'Preamble', 'kind': 'preamble', 'text': text_of(st['preamble'])}
     for kind, it in st['items']:
@@ -106,13 +122,22 @@ def read_whole(fid: int, preamble: bool = False) -> tuple[dict, str, dict]:
 
 # ---- the amending laws ------------------------------------------------------------------------------------------------
 LAW68 = r'(?:the )?Law n° ?68/2018 of 30/08/2018 determining offences and penalties(?: in general)?'
-AMEND = re.compile(rf'^Article (\d+) of {LAW68} is amended as follows:$')
-REPEAL = re.compile(rf'^Article (\d+) of {LAW68} is repealed\.$')
-INSERT = re.compile(rf'^In {LAW68},? an Article (\d+) (bis|ter) is inserted which is worded as follows:$')
+LAW017 = r'Law n° 017/2020 of 07/10/2020 establishing the general statute governing public servants'
+
+
+def grammar(ref: str) -> tuple:
+    """(amend, repeal, insert) patterns for amending articles of the law matched by ref."""
+    return (re.compile(rf'^Article (\d+)(?: (bis|ter))? of {ref} is (?:amended|modified) as follows:$'),
+            re.compile(rf'^Article (\d+)(?: (bis|ter))? of {ref} is repealed\.$'),
+            re.compile(rf'^In {ref},? (?:an )?Article (\d+) (bis|ter) is inserted (?:which is worded|to read) as follows:$'))
+
+
 SKIP = re.compile(r'^(This Law was drafted, considered and adopted in Ikinyarwanda\.|All prior legal provisions contrary '
                   r'to this Law are repealed\.|This Law comes into force on the date of its publication in the Official '
-                  r'Gazette of the Republic of Rwanda\.)$')
+                  r'Gazette of the Republic of Rwanda\.(?: It takes effects? as of \d{1,2} [A-Z][a-z]+ \d{4}\.)?)$')
 UNCLOSED = []
+CLOSED_BEFORE_STOP = []
+BODY_ONLY = []      # (amending article, unit key) where only the body was restated: the unit keeps its heading
 RESTATED_HEAD = re.compile(r'^Article (\d+)(?: (bis|ter))?\s*:\s*(.+)$')
 
 
@@ -122,6 +147,10 @@ def unquote(paras: list) -> list:
     if not m:
         raise SystemExit('restated text without an opening quote: ' + ps[0][:80])
     ps[0] = (m.group(1) or '') + ps[0][m.end():]
+    if ps[-1].endswith('".'):          # the closing mark printed before the amending sentence's full stop
+        CLOSED_BEFORE_STOP.append(ps[0][:60])
+        ps[-1] = ps[-1][:-2].rstrip() + '.'
+        return ps
     if not ps[-1].endswith('"'):
         UNCLOSED.append(ps[0][:60])   # the Gazette omits the closing mark; the article ends here anyway
         return ps
@@ -129,8 +158,9 @@ def unquote(paras: list) -> list:
     return ps
 
 
-def replay(fid: int, prev: dict) -> tuple[dict, list, str]:
+def replay(fid: int, prev: dict, ref: str = LAW68) -> tuple[dict, list, str]:
     """(changes, ops, sha256): the changes an amending law makes to prev's units."""
+    AMEND, REPEAL, INSERT = grammar(ref)
     doc, sha = pdf(fid)
     st = X.structure(doc)
     changes, ops = {}, []
@@ -143,7 +173,7 @@ def replay(fid: int, prev: dict) -> tuple[dict, list, str]:
             continue
         m_a, m_r, m_i = AMEND.match(first), REPEAL.match(first), INSERT.match(first)
         if m_r and not rest:
-            k = art_key(m_r.group(1))
+            k = art_key(m_r.group(1), m_r.group(2) or '')
             if k in prev:
                 changes[k] = None
                 ops.append(('repealed', k, it['key']))
@@ -151,7 +181,7 @@ def replay(fid: int, prev: dict) -> tuple[dict, list, str]:
                 ops.append(('repealed-already-absent', k, it['key']))
             continue
         if m_a or m_i:
-            k = art_key(m_a.group(1)) if m_a else art_key(m_i.group(1), m_i.group(2))
+            k = art_key(m_a.group(1), m_a.group(2) or '') if m_a else art_key(m_i.group(1), m_i.group(2))
             new = unquote(rest)
             head = RESTATED_HEAD.match(new[0])
             if head:
@@ -162,6 +192,7 @@ def replay(fid: int, prev: dict) -> tuple[dict, list, str]:
                 if k not in prev:
                     raise SystemExit(f'file {fid} art {it["key"]}: amends absent {k}')
                 lines = [prev[k]['text'].split('\n', 1)[0]] + new
+                BODY_ONLY.append((it['key'], k))
             else:
                 raise SystemExit(f'file {fid} art {it["key"]}: inserted article without a heading')
             if m_i and k in prev:
@@ -415,12 +446,87 @@ def main():
         'paragraphs by line pitch). Normalised once: NBSP and soft hyphens, one form of quotes and apostrophes ("\'), '
         'em dash to en dash, "Nº"/"n°" to "N°"/"n°", list ordinals "1 º" to "1°". Each file is "Article N: heading" '
         'as printed, then one paragraph per line.',
+        'Enacting formula: each whole text\'s paragraphs between its table of contents and its first article (or its '
+        'PREAMBLE) are the unit enacting-formula: title, promulgation formula and the Parliament\'s sittings and '
+        'citations. Trailing PART/TITLE headings (Law 68/2018) are left out, like CHAPTER/Section/Subsection headings. '
+        'An amending law does not change the amended act\'s enacting formula; the 2023 revision replaces the '
+        'Constitution\'s.',
         'Every text has a PDF text layer (checked with PyMuPDF); no OCR is used anywhere.',
         'Sources: the API metadata and the PDFs; robots.txt of amategeko.gov.rw allows all agents. No Wayback capture '
         'was needed.',
     ]
 
-    retrieved = sorted({meta(f)['retrieved'] for f in (5144, 3939, 4119, 4115, 4073, 4116, 6410, 8624)})
+    # General statute governing public servants (Law n° 017/2020), with its three amending laws replayed
+    ps0, shap, stp = read_whole(4423)
+    d20 = gazette_day(4423)
+    ev20 = check_commencement(stp, 4423)
+    laws['law-2020-017'] = {
+        'label': 'Law n° 017/2020',
+        'title': 'Law n° 017/2020 of 07/10/2020 establishing the general statute governing public servants',
+        'kind': 'law', 'enacted': '2020-10-07', 'published': d20, 'url': src(4423),
+        'temporary_until': None, 'restores': None, 'note': None}
+    sversions = [{'from': d20, 'source_url': src(4423), 'sha256': shap, 'units': ps0, 'credits': {}}]
+    scur = dict(ps0)
+    sdec = [f'Public servants statute: in force {d20} ({ev20}; Gazette running head "Official Gazette n° Special of '
+            '08/10/2020").']
+    body_only = []
+    for fid, key, label in ((4193, 'law-2020-019', 'Law n° 019/2020'), (6109, 'law-2024-052', 'Law n° 052/2024'),
+                            (11115, 'law-2026-017', 'Law n° 017/2026')):
+        day = gazette_day(fid)
+        BODY_ONLY.clear()
+        ch, ops, sha = replay(fid, scur, LAW017)
+        body_only += [f'{label} Art. {a} for {art_label(k)}' for a, k in BODY_ONLY]
+        doc, _ = pdf(fid)
+        stx = X.structure(doc)
+        ev = check_commencement(stx, fid)
+        tm = re.match(r'^LAW N° (\d+/\d{4}) OF (\d\d)/(\d\d)/(\d{4}) AMENDING LAW N° 017/2020 OF 07/10/2020 '
+                      r'ESTABLISHING THE GENERAL STATUTE GOVERNING PUBLIC SERVANTS$', norm(stx['enacting'][0]))
+        if not tm or f'Law n° {tm.group(1)}' != label:
+            raise SystemExit(f'file {fid}: title not recognised: {stx["enacting"][0]}')
+        laws[key] = {'label': label,
+                     'title': f'{label} of {tm.group(2)}/{tm.group(3)}/{tm.group(4)} amending {LAW017}',
+                     'kind': 'law', 'enacted': f'{tm.group(4)}-{tm.group(3)}-{tm.group(2)}', 'published': day,
+                     'url': src(fid), 'temporary_until': None, 'restores': None, 'note': None}
+        if any(op == 'repealed-already-absent' for op, _, _ in ops):
+            raise SystemExit(f'file {fid}: repeals an absent article')
+        v = {'from': day, 'source_url': src(fid), 'sha256': sha, 'changes': ch, 'credits': {k: [key] for k in ch}}
+        last = ' '.join(norm(p) for p in [it for k, it in stx['items'] if k == 'article'][-1]['paras'])
+        te = re.search(r'It takes effects? as of (\d{1,2}) ([A-Z][a-z]+) (\d{4})\.', last)
+        if te:
+            v['note'] = (f'{label} comes into force on its publication ({day}) and states: "It takes effects as of '
+                         f'{te.group(1)} {te.group(2)} {te.group(3)}", the day Law n° 017/2020 came into force. The '
+                         f'version is dated by entry into force; the earlier effect is recorded here, not backdated.')
+        sversions.append(v)
+        for k, u in ch.items():
+            scur.pop(k, None) if u is None else scur.__setitem__(k, u)
+        sdec.append(f'{label}: in force {day} ({ev}; Gazette running head). Replayed: '
+                    + '; '.join(f'Art. {a} {op} {art_label(k)}' for op, k, a in ops) + '.')
+        if te:
+            sdec.append(f'{label}: its commencement article also says "It takes effects as of {te.group(1)} '
+                        f'{te.group(2)} {te.group(3)}"; the version takes the in-force (publication) day and its note '
+                        'records the retroactive effect.')
+        if CLOSED_BEFORE_STOP:
+            sdec.append(f'{label}: the restated text beginning {"; ".join(repr(u) for u in CLOSED_BEFORE_STOP)} '
+                        'ends with the closing quotation mark printed before the full stop; the mark is removed and '
+                        'the full stop kept.')
+            CLOSED_BEFORE_STOP.clear()
+        if UNCLOSED:
+            raise SystemExit(f'file {fid}: restated text without a closing mark: {UNCLOSED}')
+    acts.append({'slug': 'public-servants', 'short': 'Public Servants Statute',
+                 'title': 'Law n° 017/2020 of 07/10/2020 establishing the general statute governing public servants',
+                 'url': src(4423), 'first_law': 'law-2020-017', 'earlier_laws': [], 'versions': sversions})
+    decisions += sdec + [
+        'Public servants statute: no official consolidation exists (the portal serves Law n° 017/2020 and its three '
+        'amending laws as separate Gazette texts), so the later versions are replays of the amending laws: each '
+        'restated or inserted article is the amending law\'s own text, verbatim after normalisation. Where an amending '
+        f'law restates only the body of an article ({"; ".join(body_only)}), the article keeps its heading as enacted '
+        '(the amending article\'s own heading is not part of the restated text).',
+        'Public servants statute: the folder was law-2020-017/ in the earlier Lexifina build of this repository '
+        '(main 121603e, its own tools); it is public-servants/ here, with the same article files.',
+    ]
+
+    retrieved = sorted({meta(f)['retrieved'] for f in (5144, 3939, 4119, 4115, 4073, 4116, 6410, 8624, 4423, 4193,
+                                                       6109, 11115)})
     n_req = sum(1 for _ in open(F.CACHE / 'requests.jsonl', encoding='utf-8'))
     corpus = {
         'country': {
@@ -445,7 +551,8 @@ def main():
              'notes': 'Trilingual Gazette PDFs (Kinyarwanda, English, French: all three are official; the laws say they '
                       'were adopted in Ikinyarwanda). English column used. Files: '
                       + ', '.join(f'{f} sha256 {meta(f)["pdf_sha256"][:16]}' for f in (5144, 3939, 4119, 4115, 4073,
-                                                                                         4116, 6410, 8624))}],
+                                                                                         4116, 6410, 8624, 4423, 4193,
+                                                                                         6109, 11115))}],
         'laws': dict(sorted(laws.items())),
         'acts': acts,
         'applies': [],

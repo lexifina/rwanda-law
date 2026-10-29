@@ -11,6 +11,12 @@
   ]},
   {"slug": "data-protection", "texts": [
    {"file": 4116, "role": "base", "law": "law-2021-058"}
+  ]},
+  {"slug": "public-servants", "texts": [
+   {"file": 4423, "role": "base", "law": "law-2020-017"},
+   {"file": 4193, "role": "amending", "law": "law-2020-019"},
+   {"file": 6109, "role": "amending", "law": "law-2024-052"},
+   {"file": 11115, "role": "amending", "law": "law-2026-017"}
   ]}
  ],
  "not_used": [

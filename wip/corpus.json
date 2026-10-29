@@ -20,10 +20,10 @@
   {
    "name": "Official Gazette of the Republic of Rwanda, via the Rwanda Law Reform Commission API (amategeko.gov.rw)",
    "url": "https://apis.amategeko.gov.rw/v1/site/documents-files/",
-   "retrieved": "2026-10-28",
-   "requests": 36,
+   "retrieved": "2026-10-29",
+   "requests": 44,
    "licence": "No open licence; RLRC property (legislation), Judiciary property (law reports). Private repo.",
-   "notes": "Trilingual Gazette PDFs (Kinyarwanda, English, French: all three are official; the laws say they were adopted in Ikinyarwanda). English column used. Files: 5144 sha256 1a4a2fb4c74cfc3d, 3939 sha256 1da4499ef20fa31f, 4119 sha256 fcfe52f7961def92, 4115 sha256 779e01dc63ac8598, 4073 sha256 8cb31979af6ee59c, 4116 sha256 d32ce8e8823c8b16, 6410 sha256 c9d1c618615e8e98, 8624 sha256 228704b87522a885"
+   "notes": "Trilingual Gazette PDFs (Kinyarwanda, English, French: all three are official; the laws say they were adopted in Ikinyarwanda). English column used. Files: 5144 sha256 1a4a2fb4c74cfc3d, 3939 sha256 1da4499ef20fa31f, 4119 sha256 fcfe52f7961def92, 4115 sha256 779e01dc63ac8598, 4073 sha256 8cb31979af6ee59c, 4116 sha256 d32ce8e8823c8b16, 6410 sha256 c9d1c618615e8e98, 8624 sha256 228704b87522a885, 4423 sha256 241f0fe51edc0d93, 4193 sha256 3c38f4f2c6b01f6e, 6109 sha256 0bc5ffcc9288a6c5, 11115 sha256 f22acdea32cba0d4"
   }
  ],
  "laws": {
@@ -82,6 +82,28 @@
    "restores": null,
    "note": null
   },
+  "law-2020-017": {
+   "label": "Law n° 017/2020",
+   "title": "Law n° 017/2020 of 07/10/2020 establishing the general statute governing public servants",
+   "kind": "law",
+   "enacted": "2020-10-07",
+   "published": "2020-10-08",
+   "url": "https://apis.amategeko.gov.rw/v1/site/documents-files/4423",
+   "temporary_until": null,
+   "restores": null,
+   "note": null
+  },
+  "law-2020-019": {
+   "label": "Law n° 019/2020",
+   "title": "Law n° 019/2020 of 19/11/2020 amending Law n° 017/2020 of 07/10/2020 establishing the general statute governing public servants",
+   "kind": "law",
+   "enacted": "2020-11-19",
+   "published": "2020-11-20",
+   "url": "https://apis.amategeko.gov.rw/v1/site/documents-files/4193",
+   "temporary_until": null,
+   "restores": null,
+   "note": null
+  },
   "law-2021-058": {
    "label": "Law n° 058/2021",
    "title": "Law n° 058/2021 of 13/10/2021 relating to the protection of personal data and privacy",
@@ -100,6 +122,28 @@
    "enacted": "2023-12-04",
    "published": "2023-12-05",
    "url": "https://apis.amategeko.gov.rw/v1/site/documents-files/4073",
+   "temporary_until": null,
+   "restores": null,
+   "note": null
+  },
+  "law-2024-052": {
+   "label": "Law n° 052/2024",
+   "title": "Law n° 052/2024 of 07/06/2024 amending Law n° 017/2020 of 07/10/2020 establishing the general statute governing public servants",
+   "kind": "law",
+   "enacted": "2024-06-07",
+   "published": "2024-06-19",
+   "url": "https://apis.amategeko.gov.rw/v1/site/documents-files/6109",
+   "temporary_until": null,
+   "restores": null,
+   "note": null
+  },
+  "law-2026-017": {
+   "label": "Law n° 017/2026",
+   "title": "Law n° 017/2026 of 23/04/2026 amending Law n° 017/2020 of 07/10/2020 establishing the general statute governing public servants",
+   "kind": "law",
+   "enacted": "2026-04-23",
+   "published": "2026-04-24",
+   "url": "https://apis.amategeko.gov.rw/v1/site/documents-files/11115",
    "temporary_until": null,
    "restores": null,
    "note": null
@@ -143,6 +187,11 @@
      "source_url": "https://apis.amategeko.gov.rw/v1/site/documents-files/5144",
      "sha256": "1a4a2fb4c74cfc3db29e419a0dfb66c0f68822574b2f41d6e0f66b580d8b202b",
      "units": {
+      "enacting-formula": {
+       "label": "Enacting formula",
+       "kind": "enacting",
+       "text": "THE CONSTITUTION OF THE REPUBLIC OF RWANDA OF 2003 REVISED IN 2015\n"
+      },
       "preamble": {
        "label": "Preamble",
        "kind": "preamble",
@@ -1883,6 +1932,11 @@
        "text": "Article 176: Entry into force\nThis revised Constitution comes into force upon promulgation by the President of the Republic and its publication in the Official Gazette of the Republic of Rwanda.\n"
       },
       "art-177": null,
+      "enacting-formula": {
+       "label": "Enacting formula",
+       "kind": "enacting",
+       "text": "CONSTITUTION OF THE REPUBLIC OF RWANDA\nWe, KAGAME Paul, President of the Republic;\nTHE PARLIAMENT HAS ADOPTED AND WE SANCTION AND PROMULGATE THE REVISION OF THE CONSTITUTION OF THE REPUBLIC OF RWANDA AND ORDER IT BE PUBLISHED IN THE OFFICIAL GAZETTE OF THE REPUBLIC OF RWANDA\nTHE PARLIAMENT:\nThe Chamber of Deputies, meeting in a Constituent Assembly to revise the Constitution, in its sitting of 05 July 2023;\nThe Senate, meeting in a Constituent Assembly to revise the Constitution, in its sitting of 05 July 2023;\nPursuant to the Constitution of the Republic of Rwanda of 2003 revised in 2015, especially in Article 175;\nOn the initiative of the President of the Republic and after consideration and approval by the Cabinet, in its meeting of 24/03/2023;\nADOPTS THE REVISION OF THE CONSTITUTION OF THE REPUBLIC OF RWANDA OF 2003 REVISED IN 2015 AS FOLLOWS:\nTHE CONSTITUTION OF THE REPUBLIC OF RWANDA\n"
+      },
       "preamble": {
        "label": "Preamble",
        "kind": "preamble",
@@ -2397,6 +2451,9 @@
       "art-177": [
        "constitution-revision-2023"
       ],
+      "enacting-formula": [
+       "constitution-revision-2023"
+      ],
       "preamble": [
        "constitution-revision-2023"
       ]
@@ -2418,6 +2475,11 @@
      "source_url": "https://apis.amategeko.gov.rw/v1/site/documents-files/4119",
      "sha256": "fcfe52f7961def9235f7f7837386fd9234c0fbee0905fa533b886dfdf6c600f2",
      "units": {
+      "enacting-formula": {
+       "label": "Enacting formula",
+       "kind": "enacting",
+       "text": "LAW N° 68/2018 OF 30/08/2018 DETERMINING OFFENCES AND PENALTIES IN GENERAL\nWe, KAGAME Paul, President of the Republic;\nTHE PARLIAMENT HAS ADOPTED AND WE SANCTION, PROMULGATE THE FOLLOWING LAW AND ORDER IT BE PUBLISHED IN THE OFFICIAL GAZETTE OF THE REPUBLIC OF RWANDA\nTHE PARLIAMENT:\nThe Chamber of Deputies, in its session of 28 June 2018;\nPursuant to the Constitution of the Republic of Rwanda of 2003 revised in 2015, especially in Articles 29, 64, 69, 70, 88, 90, 91,106, 120, 168 and 176;\nADOPTS:\n"
+      },
       "art-001": {
        "label": "Article 1",
        "kind": "art",
@@ -4399,6 +4461,11 @@
      "source_url": "https://apis.amategeko.gov.rw/v1/site/documents-files/4116",
      "sha256": "d32ce8e8823c8b16adf05ef31b99ed2c06af1980fb43d14b7bcde0051d8c81f8",
      "units": {
+      "enacting-formula": {
+       "label": "Enacting formula",
+       "kind": "enacting",
+       "text": "LAW N° 058/2021 OF 13/10/2021 RELATING TO THE PROTECTION OF PERSONAL DATA AND PRIVACY\nWe, KAGAME Paul, President of the Republic;\nTHE PARLIAMENT HAS ADOPTED AND WE SANCTION, PROMULGATE THE FOLLOWING LAW AND ORDER IT BE PUBLISHED IN THE OFFICIAL GAZETTE OF THE REPUBLIC OF RWANDA\nTHE PARLIAMENT:\nThe Chamber of Deputies, in its sitting of 12 August 2021;\nPursuant to the Constitution of the Republic of Rwanda of 2003 revised in 2015, especially in Articles 23, 64, 69, 70, 88, 90, 91, 93, 106, 120,122 and 176;\nPursuant to the African Union Convention on cyber security and personal data protection adopted in Malabo, Equatorial Guinea, on 27 June 2014, ratified by Presidential Order n° 104/01 of 18/09/2019;\nADOPTS:\n"
+      },
       "art-001": {
        "label": "Article 1",
        "kind": "art",
@@ -4753,6 +4820,586 @@
      "credits": {}
     }
    ]
+  },
+  {
+   "slug": "public-servants",
+   "short": "Public Servants Statute",
+   "title": "Law n° 017/2020 of 07/10/2020 establishing the general statute governing public servants",
+   "url": "https://apis.amategeko.gov.rw/v1/site/documents-files/4423",
+   "first_law": "law-2020-017",
+   "earlier_laws": [],
+   "versions": [
+    {
+     "from": "2020-10-08",
+     "source_url": "https://apis.amategeko.gov.rw/v1/site/documents-files/4423",
+     "sha256": "241f0fe51edc0d93226188fa38d0252fba33797c4e4995b81594913272f40c7d",
+     "units": {
+      "enacting-formula": {
+       "label": "Enacting formula",
+       "kind": "enacting",
+       "text": "LAW N° 017/2020 OF 07/10/2020 ESTABLISHING THE GENERAL STATUTE GOVERNING PUBLIC SERVANTS\nWe, KAGAME Paul, President of the Republic;\nTHE PARLIAMENT HAS ADOPTED AND WE SANCTION, PROMULGATE THE FOLLOWING LAW AND ORDER IT BE PUBLISHED IN THE OFFICIAL GAZETTE OF THE REPUBLIC OF RWANDA\nTHE PARLIAMENT:\nThe Chamber of Deputies, in its sitting of 10 August 2020;\nPursuant to the Constitution of the Republic of Rwanda of 2003 revised in 2015, especially in Articles 27, 30, 31, 32, 33, 64, 70, 88, 89, 90, 91, 106, 120, 122 and 176;\nHaving reviewed Law n° 86/2013 of 11/09/2013 establishing the general statutes for public service;\nADOPTS:\n"
+      },
+      "art-001": {
+       "label": "Article 1",
+       "kind": "art",
+       "text": "Article One: Purpose of this Law\nThis Law establishes the general statute governing public servants. It also governs working relations between a public servant and the State as the employer.\n"
+      },
+      "art-002": {
+       "label": "Article 2",
+       "kind": "art",
+       "text": "Article 2: Scope of this Law\nThis Law governs public servants employed on a permanent basis unless otherwise provided for by special statutes. Contractual staff in public service are governed by the Law regulating labour unless otherwise provided for by this Law.\nThis Law also applies to political leaders for the following matters:\n1° maternity leave;\n2° incidental leave;\n3° Sick leave;\n4° official public holiday;\n5° leave of absence for a specific period;\n6° prescription of salary and allowances;\n7° official mission;\n8° right on administrative file;\n9° health and safety at workplace;\n10° retirement benefits;\n11° work certificate.\nHowever, in case a provision of Paragraph 2 of this Article contradicts the legislation governing political leaders, the Law governing political leaders applies.\n"
+      },
+      "art-003": {
+       "label": "Article 3",
+       "kind": "art",
+       "text": "Article 3: Special statutes\nApart from security organs' special statutes which are established by a Presidential Order, a Prime Minister's Order may establish special statute governing public servants.\n"
+      },
+      "art-004": {
+       "label": "Article 4",
+       "kind": "art",
+       "text": "Article 4: Criteria and modalities for establishing special statutes\nA public institution that wishes to have a special statute is required:\n1° to write a letter to the Minister providing sufficient grounds for such a special statute request in a way that following its nature, the management of its employees cannot be governed by this Law;\n2° to write a special statute proposal and prepare its explanatory note with specific provisions different from those provided for in this Law.\nThe special statute is limited to the following:\n1° recruitment modalities;\n2° career development modalities;\n3° modalities for disciplinary proceedings;\n4° staff training;\n5° official mission;\n6° retirement.\nHowever, the competent authority to establish special statute may allow to include any other element in addition to those provided for in Paragraph 2 of this Article after establishing that the reasons given by the public institution requesting a special statute are founded.\nThe special statute does not provide for modalities for determining the salary and fringe benefits for public servants.\nAfter establishing that the special statute following the specific nature of a public institution or its personnel is founded, the Minister submits to the competent authority the draft special statute for consideration.\nThe provisions of this Article do not apply to special statutes for security organs.\n"
+      },
+      "art-005": {
+       "label": "Article 5",
+       "kind": "art",
+       "text": "Article 5: Definitions\nIn this Law, the following terms are defined as follows:\n1° appointment: assigning a job position to a person;\n2° week: period of seven (7) consecutive days;\n3° organisational structure: organizational chart indicating the organisational arrangement of a public institution according to its departments, job positions and the number of posts;\n4° job classification: a table used to compare job positions in order to determine their hierarchical value and corresponding salaries;\n5° grade: a system expressed in letters, figures or both indicating the employment level of a public servant as well as the vertical and horizontal ranking of his or her job position;\n6° Minister: the Minister in charge of public service;\n7° public service: a whole of public agencies and public servants determined by the Government to serve the population;\n8° month: period of thirty (30) consecutive days;\n9° index: a number indicating the value of the grade of a public servant or his or her job position upon which his or her salary is calculated;\n10° public servant: a person who occupies a permanent job position or governed by an employment contract in public service and who is paid for it;\n11° job: designation given to an activity carried out in public service;\n12° salary: payment made to a public servant to compensate services delivered;\n13° job position: a single and physical position where a public servant is appointed in order to carry out duties related to his or her job;\n14° job category: a set of jobs with similar characteristics such as the nature of tasks and duties, modalities for employment access and promotion;\n15° public institution: an agency established by a law, an order or through a decision of the competent authority;\n"
+      },
+      "art-006": {
+       "label": "Article 6",
+       "kind": "art",
+       "text": "Article 6: Public servants governed by an employment contract\nA public institution may employ a staff governed by an employment contract.\nAn Order of the Minister determines modalities for recruitment and management of public servants governed by an employment contract in public service.\n"
+      },
+      "art-007": {
+       "label": "Article 7",
+       "kind": "art",
+       "text": "Article 7: Delegation of powers\nA competent authority in a public institution may delegate powers to another public servant. A Presidential Order determines modalities for delegation of powers in public service.\n"
+      },
+      "art-008": {
+       "label": "Article 8",
+       "kind": "art",
+       "text": "Article 8: Methods of recruitment of public servants\nThe recruitment in public service is carried out through one of the following methods:\n1° competition;\n2° appointment;\n3° direct recruitment.\nA Presidential Order determines modalities for the implementation of methods of recruitment of public servants provided for under Paragraph One of this Article. It may also provide for other methods of recruitment.\n"
+      },
+      "art-009": {
+       "label": "Article 9",
+       "kind": "art",
+       "text": "Article 9: Requirements for entering in the public service\nA person that wishes to be integrated in public service must fulfil the following:\n1° to be a Rwandan;\n2° to meet the required profile;\n3° to be at least eighteen (18) years old;\n4° not to have been definitively sentenced to a term of imprisonment equal to or exceeding six (6) months;\n5° not to have been dismissed from office in the public service unless he or she is rehabilitated;\n6° not to appear on public service black list;\n7° not to have been definitively sentenced for the crime of genocide or genocide ideology and other related offences.\nHowever, a person aged at least sixteen (16) years may be employed in public service upon written authorization by the Minister.\nAn Order of the Minister determines prohibited works for a public servant aged from sixteen (16) years but who is less than eighteen (18) years.\n"
+      },
+      "art-010": {
+       "label": "Article 10",
+       "kind": "art",
+       "text": "Article 10: Appointment of a public servant governed by an employment contract on a permanent job position\nA public servant governed by an employment contract who occupying a job position that is put on the organisational structure is appointed on such a job position without competition if:\n1° the job position does not change the job category;\n2° he or she meets the required job profiles;\n3° he or she has not been punished for a disciplinary fault;\n4° he or she falls in the category of indashyikirwa;\n5° he or she fulfils the conditions provided for in Article 9 of this Law.\n"
+      },
+      "art-011": {
+       "label": "Article 11",
+       "kind": "art",
+       "text": "Article 11: Induction program\nA public servant undergoes an induction program to instil in him or her professional values and ethics and introduce him or her to the vision of the State and his or her duties.\nA Presidential Order referred to in Article 8 of this Law determines modalities for conducting induction program.\n"
+      },
+      "art-012": {
+       "label": "Article 12",
+       "kind": "art",
+       "text": "Article 12: Length of the probationary period\nA public servant who starts duties in public service undergoes a probationary period of six (6) months whereby his or her immediate supervisor at first degree evaluates his or her performance in terms of professional capacities and competences.\nAt the beginning of the probationary period, a public servant is informed by the immediate supervisor of his or her duties.\nHowever, the following public servants are not subject to a probationary period:\n1° a public servant with experience appointed to a post that requires work experience;\n2° a public servant who has successfully completed a probationary period of six (6) months, and he or she is again recruited to a job position with duties similar to the previous ones.\n"
+      },
+      "art-013": {
+       "label": "Article 13",
+       "kind": "art",
+       "text": "Article 13: Completion of probationary period\nWhen a public servant successfully completes a probationary period, a competent authority confirms his or her appointment in writing.\nIf the probationary period proves that a public servant is not competent, he or she is removed from office by a competent authority.\nHowever, the competent authority may extend the probationary period, for justified reasons, for a period not exceeding three (3) months.\n"
+      },
+      "art-014": {
+       "label": "Article 14",
+       "kind": "art",
+       "text": "Article 14: Working hours\nAn Order of the Minister determines weekly working hours for public servants and modalities for their respect.\n"
+      },
+      "art-015": {
+       "label": "Article 15",
+       "kind": "art",
+       "text": "Article 15: Status of a public servant in service\nA public servant in service may be:\n1° in service;\n2° on transfer;\n3° on secondment;\n4° on suspension of duties;\n5° on leave of absence for a specific period.\n"
+      },
+      "art-016": {
+       "label": "Article 16",
+       "kind": "art",
+       "text": "Article 16: Public servant in service or considered to be in service\nA public servant is in service if he or she occupies a job position to which he or she was appointed and performs his or her duties.\nA public servant is also considered to be in service when:\n1° on leave;\n2° on official mission;\n3° pursuing a capacity development program;\n4° in Itorero;\n5° in national service.\n"
+      },
+      "art-017": {
+       "label": "Article 17",
+       "kind": "art",
+       "text": "Article 17: Types of leave\nTypes of leave are:\n1° annual leave;\n2° incidental leave;\n3° maternity leave;\n4° sick leave;\n5° public holiday;\n6° authorised absence.\n"
+      },
+      "art-018": {
+       "label": "Article 18",
+       "kind": "art",
+       "text": "Article 18: Annual leave\nA public servant is entitled to an annual leave of one (1) month that may be split into three (3) portions maximum.\nHowever, a newly recruited public servant is entitled to an annual leave after twelve (12) months including the probationary period.\n"
+      },
+      "art-019": {
+       "label": "Article 19",
+       "kind": "art",
+       "text": "Article 19: Annual leave plan\nA public institution approves an annual leave plan for public servants not later than 31st July of every fiscal year.\n"
+      },
+      "art-020": {
+       "label": "Article 20",
+       "kind": "art",
+       "text": "Article 20: Deadline for taking annual leave\nA public servant applies and is granted, in writing, for an annual leave to his or her immediate supervisor in accordance with the annual leave plan.\nDue to the organisation of a public institution or the nature of position, the annual leave is granted by another competent authority upon approval by the immediate supervisor.\nHowever, when a public servant applies for annual leave, his or her immediate supervisor may postpone it due to work related reasons. The postponed leave is taken not later than 31st December of the following fiscal year.\nA public servant transferred, redeployed, seconded, appointed in another public institution and who has not benefited from the annual leave, is entitled to his or her annual leave he or she did not benefit in the new public institution.\n"
+      },
+      "art-021": {
+       "label": "Article 21",
+       "kind": "art",
+       "text": "Article 21: Incidental leave\nAn immediate supervisor grants incidental leave to a public servant in case of fortunate or unfortunate event that occurs in his or her family as follows:\n1° two (2) working days in case of his or her civil marriage;\n2° four (4) working days in case of delivery of his wife;\n3° five (5) working days in addition to days provided for in Item 2o of this Paragraph in case of complication related to his wife's delivery;\n4° seven (7) working days in case of death of his or her spouse;\n5° one (1) month in addition to days provided for in Item 2o of Paragraph One of this Article in case his wife dies while leaving a baby of less than three (3) months;\n6° five (5) working days in case of death of his or her child or adoptive child;\n7° four (4) working days in case of death of his or her father, mother, father-in- law or mother-in-law;\n8° four (4) working days in case of death of his or her brother or sister;\n9° three (3) working days in case of death of grandfather or grandmother;\n10° three (3) working days in case of his or her transfer over a distance of more than thirty (30) kilometres from his or her usual place of work.\nA public servant on incidental leave continues to receive his or her salary and fringe benefits.\n"
+      },
+      "art-022": {
+       "label": "Article 22",
+       "kind": "art",
+       "text": "Article 22: Leave granted to a female public servant in case of death of her new- born baby\nA female public servant who gives birth to a still-born baby from the twentieth (20th) week of pregnancy is entitled to a leave of eight (8) weeks as of the baby's death. The employer pays the salary to the female public servant for six (6) weeks, while the government organ in charge of maternity leave benefits scheme pays the salary for the last two (2) weeks.\nA female public servant who gives birth to a child who dies after birth is entitled to a leave equal to the remaining days from the end of her maternity leave. Her salary continues to be paid as this is the case for a female public servant who is on a maternity leave.\n"
+      },
+      "art-023": {
+       "label": "Article 23",
+       "kind": "art",
+       "text": "Article 23: Leave granted to a female public servant in case of miscarriage\nA female public servant who has miscarriage before twenty (20) weeks of pregnancy is granted a sick leave provided for by this Law.\n"
+      },
+      "art-024": {
+       "label": "Article 24",
+       "kind": "art",
+       "text": "Article 24: Leave granted to a female public servant giving birth to premature baby\nA female public servant who gives birth to a premature baby is entitled a leave of the remaining days for the child to be born at nine (9) months. During this period, the employer and the government organ in charge of maternity leave benefits scheme each pay half (1/2) of the salary to the female public servant.\nAfter the leave referred to in Paragraph One of this Article, the female public servant is entitled to a maternity leave of twelve (12) weeks.\n"
+      },
+      "art-025": {
+       "label": "Article 25",
+       "kind": "art",
+       "text": "Article 25: Additional leave in case of complications related to delivery\nIn case of complications related to delivery, an employer grants a female public servant an additional paid leave not exceeding one (1) month. A recognised medical doctor issues a certificate certifying that there have been complications related to delivery before such additional leave is granted.\n"
+      },
+      "art-026": {
+       "label": "Article 26",
+       "kind": "art",
+       "text": "Article 26: Maternity leave benefits\nMaternity leave benefits are granted in accordance with relevant legislation.\n"
+      },
+      "art-027": {
+       "label": "Article 27",
+       "kind": "art",
+       "text": "Article 27: Coincidence of leaves\nWhen annual leave coincides with incidental leave or maternity leave, the annual leave is suspended and resumes after the incidental leave or maternity leave.\n"
+      },
+      "art-028": {
+       "label": "Article 28",
+       "kind": "art",
+       "text": "Article 28: Breastfeeding period\nDuring twelve (12) months, after maternity leave, a female public servant who gave birth is entitled to a breastfeeding period of one (1) hour per day, taken during working hours.\n"
+      },
+      "art-029": {
+       "label": "Article 29",
+       "kind": "art",
+       "text": "Article 29: Short-term sick leave\nAn immediate supervisor grants to a public servant a short-term sick leave not exceeding one (1) month for reasons of sickness ascertained by a recognised medical doctor.\n"
+      },
+      "art-030": {
+       "label": "Article 30",
+       "kind": "art",
+       "text": "Article 30: Long-term sick leave\nThe head of an institution grants to a public servant a long-term sick leave exceeding one (1) month but not exceeding six (6) months basing on the decision of a committee of at least three (3) medical doctors, which examines a medical report issued by a medical doctor who treated the public servant, attesting that he or she is unable to work.\nAn Order of the Minister in charge of health determines the modalities for establishment, organisation and functioning of the committee of medical doctors.\nSubject to provisions of Paragraph One of this Article, the Minister grants a long-term sick leave to public servants appointed by a Presidential Order or a Prime Minister's Order with exception of Cabinet members, Governors and heads of institutions who are granted a long term sick leave by their appointing authority or his or her delegate.\nAn official in an elective position is granted a long-term sick leave by the head of his or her institution.\nHowever, in decentralized administrative entities, officials in elective posts are granted a long-term sick leave by the Chairperson of the Council after consultation with the Minister in charge of Local Government.\nA public servant who is granted a long-term sick leave is entitled to his or her full salary during the first three (3) months and two- thirds (2/3) of the salary for other three (3) months.\nAt the end of a long-term sick leave, a public servant returns to work and resumes duties after presenting to the authority who granted him or her the leave a medical certificate issued by a recognized doctor ascertaining that he or she is able to perform his or her duties.\nIf a public servant is not able to resume work after the expiry of the long-term sick leave period referred to under Paragraph One of this Article, he or she is removed from office by the competent authority.\n"
+      },
+      "art-031": {
+       "label": "Article 31",
+       "kind": "art",
+       "text": "Article 31: Authorised absence\nFor justified reasons, an immediate supervisor may grant to a public servant a written authorised absence from work for one (1) day maximum not deducted from annual leave.\nHowever, the immediate supervisor does not grant an authorised absence for more than ten (10) days per year.\n"
+      },
+      "art-032": {
+       "label": "Article 32",
+       "kind": "art",
+       "text": "Article 32: Official public holidays\nA Presidential Order determines official public holidays.\n"
+      },
+      "art-033": {
+       "label": "Article 33",
+       "kind": "art",
+       "text": "Article 33: Official mission\nA competent authority may send a public servant on official mission within or outside the country in the interest of service.\nA Presidential Order determines modalities for sending public servants on official mission.\n"
+      },
+      "art-034": {
+       "label": "Article 34",
+       "kind": "art",
+       "text": "Article 34: Capacity development\nA public servant has the right and the duty to undertake capacity development programs to improve his or her expertise and knowledge.\nA Prime Minister's Order determines modalities for capacity development of public servants.\n"
+      },
+      "art-035": {
+       "label": "Article 35",
+       "kind": "art",
+       "text": "Article 35: Job rotation\nFor interests of the service, the head of a public institution may rotate, within the same institution, public servants on different job positions of the same grade, requiring the same qualifications and such job positions must not be on the level of public servants with a pool of public servants under their supervision.\nA head of a public institution may, after consultation with the appointing authority, rotate within the same institution public servants having a pool of staff under their supervision.\nThe job rotation does not exceed twelve (12) months.\nA public servant in job rotation provided for in this Article continues to receive the salary of the job position he or she was appointed to.\n"
+      },
+      "art-036": {
+       "label": "Article 36",
+       "kind": "art",
+       "text": "Article 36: Transfer of a public servant\nThe appointing authority may, in the interest of service, transfer a public servant to another job position of the same grade within the same institution or to another institution.\nHowever, the transfer to another institution of a public servant who is not appointed by a Presidential Order or a Prime Minister's Order is done by the Minister.\nA transfer of a public servant from a decentralised administrative entity to another decentralized administrative entity is done by the Minister in charge of local Government and the Minister is notified.\nA public servant who is transferred is entitled to the grade previously held except for a public servant transferred to a State owned company, who is allocated a salary and fringe benefits which are not less than what he or she was entitled to.\n"
+      },
+      "art-037": {
+       "label": "Article 37",
+       "kind": "art",
+       "text": "Article 37: Change of job position in public service\nA public servant may change a job position within the same public institution or within public service.\nA public servant who has completed at least the probationary period may compete for another job position within the same public institution.\nA public servant who has completed at least three (3) years of service in the same public institution may compete for a job position in another public institution.\nSubject to provisions of Paragraph 3 of this Article, a public servant who wishes to move from a public institution in which he or she is employed to another public institution notifies in writing the head of the public institution in which he or she is employed at least fifteen (15) days before joining the other public institution.\n"
+      },
+      "art-038": {
+       "label": "Article 38",
+       "kind": "art",
+       "text": "Article 38: Secondment of a public servant\nA public servant may be seconded in the interest of service. A public servant is on secondment when he or she is temporarily assigned to work for:\n1° another public institution;\n2° Government project or program;\n3° an institution in which the Government has interest;\n4° a private institution bound to the Government by an agreement;\n5° an international organisation;\n6° State owned company.\nThe secondment is decided in writing by the appointing authority or any other authority designated for that matter.\nA public servant who is not appointed by a Presidential Order or a Prime Minister's Order, is seconded to another institution by the Minister.\nThe duration of secondment is determined by the authority who seconded the public servant.\nThe seconded public servant is governed by the legislation governing the institution to which he or she is seconded. The seconded public servant receives salary, fringe benefits or both, from the receiving institution, which cannot be below what he or she was entitled to.\n"
+      },
+      "art-039": {
+       "label": "Article 39",
+       "kind": "art",
+       "text": "Article 39: End of the secondment\nIf secondment ends, a seconded public servant returns to his or her original public institution or any position in public service and the period of secondment is taken into consideration in his or her promotion.\n"
+      },
+      "art-040": {
+       "label": "Article 40",
+       "kind": "art",
+       "text": "Article 40: Reasons for suspension from duties\nA public servant may be suspended from duties if he or she:\n1° is provisionally detained for a period not exceeding six (6) months;\n2° is subject to disciplinary proceedings for a fault that may lead to a sanction of the second category if:\na. the provisional suspension is the only way to prevent the suspect public servant from disposing of evidence or exerting pressure on witnesses;\nb. the serious nature of the disciplinary fault, circumstances under which it was committed or the level of harm caused may undermine the image of the employing public institution in case he or she is not suspended;\n3° has not yet found another job when his or her position is removed from the organisational structure or the required job profile of the job position he or she was occupying was changed and does not meet the new required job profile;\n4° is removed from a position filled without competition and has not yet found another job.\nThe public servant referred to under Items 1o, 3o and 4o of this Article is suspended by the head of his or her public institution and the public servant referred to under Item 2o of this Article is suspended by the competent authority determined by a Presidential Order determining disciplinary faults, modalities for disciplinary proceedings and disciplinary sanctions.\n"
+      },
+      "art-041": {
+       "label": "Article 41",
+       "kind": "art",
+       "text": "Article 41: Rights of a public servant suspended from duties\nThe salary of a public servant referred to under Items 1° and 2° of Article 40 of this Law continues to be calculated and retained for him or her.\nIf the public servant is acquitted or found innocent of the disciplinary fault, he or she receives the salary retained for him or her.\nIf that public servant is convicted or sanctioned for a disciplinary fault, he or she loses the right to his or her retained salary.\nA public servant suspended from duties referred to under Items 3° and 4° of Paragraph One of Article 40 of this Law receives two- thirds (2/3) of his or her salary during the period of suspension.\nThe payment of the salary provided for under Paragraph 4 of this Article stops when a public servant finds another job during the period of suspension from duties.\n"
+      },
+      "art-042": {
+       "label": "Article 42",
+       "kind": "art",
+       "text": "Article 42: Duration of suspension from duties\nThe duration of suspension of the public servant referred to under Items 1°, 3° and 4° of Article 40 of this Law does not exceed six (6) months.\nThe duration of suspension of the public servant referred to under Item 2° of Article 40 of this Law does not exceed three (3) months.\n"
+      },
+      "art-043": {
+       "label": "Article 43",
+       "kind": "art",
+       "text": "Article 43: End of suspension from duties due to provisional detention\nA public servant suspended from duties due to provisional detention resumes work if, before six (6) months, he or she:\n1° is provisionally released;\n2° is acquitted.\n"
+      },
+      "art-044": {
+       "label": "Article 44",
+       "kind": "art",
+       "text": "Article 44: Leave of absence for a specific period\nLeave of absence for a specific period is a situation where a public servant is authorised to stop working for a specific period of time due to one of the following reasons:\n1° to provide care to his or her sick spouse, parent, child or sibling for a period not exceeding three (3) months which may be renewed once upon justifiable reasons provided by the public servant before expiry of a three (3) month period referred to in this Paragraph;\n2° to accompany his or her spouse who moves abroad due to work related reasons for a period not exceeding one (1) month;\n3° any other reason approved by the Minister upon request of the public servant through the head of his or her employing public institution. The granted period cannot exceed three (3) months.\nA public servant authorised for leave of absence for a specific period is neither entitled to his or her salary nor other service- related fringe benefits.\nWhen the period for leave of absence for a specific period ends, the public servant resumes his or her duties. A public servant who does not resume his or her duties after the expiry of the period is presumed to have deserted his or her post.\n"
+      },
+      "art-045": {
+       "label": "Article 45",
+       "kind": "art",
+       "text": "Article 45: Modalities for leave of absence for a specific period\nExcept for a public servant appointed by a Presidential Order or a Prime Minister's Order who may be granted a leave of absence for a specific period by his or her appointing authority or his or her delegate, the leave of absence for a specific period for other public servants is requested in writing to the Minister and the public servant is given an acknowledgment of receipt.\nThe appointing authority or the Minister may not grant a leave of absence for a specific period to a public servant in the interest of the service.\nA public servant requesting for leave of absence for a specific period continues to discharge his or her duties until the response to his or her request is given.\nHowever, if fifteen (15) days expire with no written response to the public servant from the receipt of the request by the appointing authority or the Minister, the leave of absence for a specific period is considered granted.\n"
+      },
+      "art-046": {
+       "label": "Article 46",
+       "kind": "art",
+       "text": "Article 46: Performance management\nPerformance management for a public servant is conducted in accordance with relevant legislation.\n"
+      },
+      "art-047": {
+       "label": "Article 47",
+       "kind": "art",
+       "text": "Article 47: Management of public servants' career development\nAn Order of the Minister determines modalities for management of public servant's career development.\n"
+      },
+      "art-048": {
+       "label": "Article 48",
+       "kind": "art",
+       "text": "Article 48: Right on administrative file\nA public servant has right on his or her administrative file kept by the administration of public institution he or she works for.\nThe administrative file contains documents related to his or her professional performance and conduct, his or her detailed curriculum vitae and other documents required by the Law.\nA public servant has a right to access his or her administrative file and may request, in writing, the administration to update the administrative file.\n"
+      },
+      "art-049": {
+       "label": "Article 49",
+       "kind": "art",
+       "text": "Article 49: Right to establish or join trade unions\nA public servant may establish or join a trade union of his or her choice in accordance with the relevant legislation.\n"
+      },
+      "art-050": {
+       "label": "Article 50",
+       "kind": "art",
+       "text": "Article 50: Salary\nA public servant is entitled to a salary calculated in accordance with job classification.\nSalary is based on the weight of the work. The principles of salary determination are uniform across entire public service.\n"
+      },
+      "art-051": {
+       "label": "Article 51",
+       "kind": "art",
+       "text": "Article 51: Gross salary\nGross salary for a public servant is composed of:\n1° basic salary;\n2° housing, transport, medical and social security allowances.\nIf a public servant is entitled to housing and transport facilitations, allowances thereto are not included on the gross salary. They are replaced by service allowance.\nSalaries and fringe benefits of public servants are approved by the Cabinet.\n"
+      },
+      "art-052": {
+       "label": "Article 52",
+       "kind": "art",
+       "text": "Article 52: Job classification\nA Presidential Order determines job classification.\n"
+      },
+      "art-053": {
+       "label": "Article 53",
+       "kind": "art",
+       "text": "Article 53: Calculation of the basic salary\nA basic salary is equivalent to at least seventy per cent (70%) of the gross salary. It is calculated by multiplying the index by the index value.\nA Prime Minister's Order determines index value applicable in public service.\n"
+      },
+      "art-054": {
+       "label": "Article 54",
+       "kind": "art",
+       "text": "Article 54: Maximum deductions from the salary\nDeductions from salary, seizure by garnishment or deductions upon consent of the public servant must not exceed half (1/2) of his or her net salary.\n"
+      },
+      "art-055": {
+       "label": "Article 55",
+       "kind": "art",
+       "text": "Article 55: Calculation of salary\nA salary of a public servant is calculated from the day of commencement of duties and stopped on the day following his or her termination of duties.\nIf a monthly salary is not wholly due, it is divided in thirtieths and paid up to the payable number of days worked.\n"
+      },
+      "art-056": {
+       "label": "Article 56",
+       "kind": "art",
+       "text": "Article 56: Allowances\nAllowances constitute gross salary elements paid by the Government to support its public servants.\nA Prime Minister's Order determines the criteria and modalities for determination of allowances for public servants.\n"
+      },
+      "art-057": {
+       "label": "Article 57",
+       "kind": "art",
+       "text": "Article 57: Acting public servant\nIf a position is not occupied, the competent authority temporarily determines another public servant to serve in that position.\nA public servant in an acting position is entitled to a salary and monthly fringe benefits related to the position being acted in and such a salary and fringe benefits are calculated from the thirty first (31st) day in the acting position.\nA public servant serves in an acting position for a period not exceeding one (1) year except in case:\n1° the public servant is acting in the position of a public servant pursuing a capacity development program;\n2° the public servant is appointed by the Cabinet as acting;\n3° there is a reason approved by the Minister upon request of the head of the public institution.\nProvisions of Paragraph two (2) of this Article do not apply to a public servant provisionally appointed, a public servant acting on a vacant position or a position whose incumbent has been granted a leave of absence for a specific period. A public servant referred to in this Paragraph is entitled to a salary and monthly fringe benefits related to the position he or she is provisionally appointed to or acting in, from the time he or she is assigned those responsibilities.\n"
+      },
+      "art-058": {
+       "label": "Article 58",
+       "kind": "art",
+       "text": "Article 58: Prescription of arrears\nThe prescription of payment of salary, allowances and terminal benefits is two (2) years. The limitation is counted from the date on which a public servant had to receive the salary, allowances and terminal benefits.\nHowever:\n1° the period of prescription provided for in Paragraph One of this Article is interrupted when the employer has agreed with the public servant that the payments are a debt due to the public servant or the former public servant;\n2° the period of prescription provided for in Paragraph One of this Article is suspended:\na. when the public servant's case is pending before competent authority;\nb. when the case is before the court.\n"
+      },
+      "art-059": {
+       "label": "Article 59",
+       "kind": "art",
+       "text": "Article 59: Provision of equipment\nThe employer provides a public servant with necessary equipment to carry out his or her duties.\n"
+      },
+      "art-060": {
+       "label": "Article 60",
+       "kind": "art",
+       "text": "Article 60: Prevention and protection against occupational hazards\nThe employer has obligations of preventing and protecting public servants against occupational hazards.\n"
+      },
+      "art-061": {
+       "label": "Article 61",
+       "kind": "art",
+       "text": "Article 61: Healthcare of a public servant\nThe employer provides a healthcare support to a public servant and other people under public servant's care in accordance with relevant legislation.\n"
+      },
+      "art-062": {
+       "label": "Article 62",
+       "kind": "art",
+       "text": "Article 62: Declaration of occupational hazards or diseases\nAn employer declares occupational hazards or diseases suffered by a public servant in accordance with relevant legislation.\n"
+      },
+      "art-063": {
+       "label": "Article 63",
+       "kind": "art",
+       "text": "Article 63: Health and safety at workplace\nAn Order of the Minister determines general occupational health and safety requirements.\n"
+      },
+      "art-064": {
+       "label": "Article 64",
+       "kind": "art",
+       "text": "Article 64: Obligations with regard to performance\nA public servant has the obligation to provide quality services in accordance with standards established by competent authorities.\nA public servant complies with instructions of his or her supervisor if such instructions are in line with the law.\nA public servant is bound by professional secrecy in accordance with relevant legislation.\n"
+      },
+      "art-065": {
+       "label": "Article 65",
+       "kind": "art",
+       "text": "Article 65: Incompatibilities with serving as a public servant\nA public servant is prohibited from:\n1° practicing a profession or business activities that may be detrimental to the performance of his or her duties;\n2° participating in the management of a company or any public institution in case such participation may be detrimental to his or her duties. However, this prohibition does not apply to public servants representing the Government's interests in private enterprises;\n3° having an interest in a public institution or a private enterprise or having a relationship which are likely to prevent him or her from demonstrating independence, showing the truth or impartiality in the performance of his or her duties.\nSubject to provisions of Paragraph One of this Article, a public servant may, when it is not likely to impede the performance of his or her duties, sign employment contracts with different employers, whether in the public or private sector, subject to prior written authorisation by the public institution he or she works for.\n"
+      },
+      "art-066": {
+       "label": "Article 66",
+       "kind": "art",
+       "text": "Article 66: Professional conduct of a public servant\nA public servant must exhibit good conduct at and away from work.\nA Presidential Order determines the professional ethics for a public servant.\n"
+      },
+      "art-067": {
+       "label": "Article 67",
+       "kind": "art",
+       "text": "Article 67: Disciplinary liability and criminal liability\nDisciplinary proceedings against a public servant are independent from criminal liability.\nA disciplinary fault may result in both disciplinary procedure and criminal proceedings.\nIf a public servant is prosecuted for an offence connected with a disciplinary fault, the institution he or she works for opens disciplinary proceedings against him or her, without awaiting the completion of criminal proceedings.\nA Presidential Order determines disciplinary faults, modalities for disciplinary proceedings and disciplinary sanctions.\n"
+      },
+      "art-068": {
+       "label": "Article 68",
+       "kind": "art",
+       "text": "Article 68: Disciplinary fault arising from an offence\nA public servant is subject to disciplinary proceedings for a disciplinary fault arising from an offence he or she commits that is related to work while he or she is at work or outside work.\nA Presidential Order determines the disciplinary fault resulting from an offence, modalities for disciplinary proceedings and related sanctions.\n"
+      },
+      "art-069": {
+       "label": "Article 69",
+       "kind": "art",
+       "text": "Article 69: Report on disciplinary faults having been subject to disciplinary proceedings\nEach quarter, a public institution submits to the public organ in charge of appeals related to the management of public servants a report on disciplinary faults in respect of which proceedings have been conducted against its staff members and transmits a copy to the Minister.\n"
+      },
+      "art-070": {
+       "label": "Article 70",
+       "kind": "art",
+       "text": "Article 70: Procedure for appeal for reconsideration and hierarchical appeal\nA public servant who is not satisfied with the decision taken against him or her may file his or her appeal for reconsideration in the first instance in writing to the authority having taken the action.\nThe appeal for reconsideration is filed within five (5) working days of the public servant's being notified of the decision taken against him or her. The authority with whom the appeal for reconsideration is filed responds to the appeal and notifies his or her response in writing to the public servant within fifteen (15) working days of receipt of the appeal for reconsideration.\nThe authority who does not respond to the appeal within the specified time limits faces disciplinary proceedings in accordance with the code of conduct, taking into account the category of authority to which he or she belongs. In this case, the public servant reserves the right to automatically file an appeal with the public organ in charge of appeal related to the management of public servants against the authority who does not respond to his or her appeal.\nThe public organ seised responds to the appeal by a public servant within five (5) working days of receipt of the appeal. The institution seised by a public servant orders the seised authority to immediately respond to the appeal.\nThe public organ seised also requests the competent authority to take, in accordance with the code of conduct, an action against the authority did not to respond to the appeal for reconsideration referred to him or her.\nWhen a public servant is not satisfied with a decision taken in the first instance, he or she files a hierarchical appeal with the public organ in charge of appeals related to the management of public servants. The hierarchical appeal is filed within five (5) days of receipt by a public servant of a response to his or her appeal.\nThe public organ in charge of appeals related to the management of public servants responds to the appeal within one month.\nStaff members of the public organ in charge of appeals related to the management of public servants file their appeals with the Minister in the last instance.\nA decision of the public organ in charge of appeals related to the management of public servants and that of the Minister are not subject to administrative appeal.\n"
+      },
+      "art-071": {
+       "label": "Article 71",
+       "kind": "art",
+       "text": "Article 71: Powers of the public organ in charge of appeals related to the management of public servants\nWhen the public organ in charge of appeals related to the management of public servants finds that the competent authority has violated the legislation relating to the management of public servants, it writes to the competent authority requesting him or her to remedy irregularities identified or revoke his or her decision.\nThe Minister exercises the powers provided for under Paragraph One of this Article in case of an appeal referred to him or her by a staff member of the public organ in charge of appeals related to the management of public servants.\n"
+      },
+      "art-072": {
+       "label": "Article 72",
+       "kind": "art",
+       "text": "Article 72: Court referral\nA public servant who is not satisfied with a decision of an authority with whom the appeal has been filed in the last instance may refer the case to a courts of law in accordance with relevant legislation.\n"
+      },
+      "art-073": {
+       "label": "Article 73",
+       "kind": "art",
+       "text": "Article 73: Grounds for termination of employment of a public servant\nThe termination of employment of a public servant takes place when the public servant:\n1° takes a leave of absence for a non- specific period;\n2° resigns;\n3° is removed from office;\n4° is authorized to cease his or her duties in the interests of the service;\n5° is dismissed;\n6° retires;\n7° dies.\nThe termination of employment of a public servant results in him or her being removed from the list of public servants.\n"
+      },
+      "art-074": {
+       "label": "Article 74",
+       "kind": "art",
+       "text": "Article 74: Leave of absence for a non- specific period\nThe application for a leave of absence for a non-specific period is a decision made by a public servant indicating in writing his or her wish to cease his or her duties.\nA public servant has the right to apply for a leave of absence for a non-specific period after serving at least three (3) years within the same public institution.\nHowever, a public servant who has an exceptional and justified reason may apply for a leave of absence for a non-specific period before serving three (3) years within the same public institution he or she works for. Exceptional and justified reasons are approved by the appointing authority for public servants appointed by a Presidential Order or a Prime Minister's Order. For other public servants, exceptional and justified reasons are approved by the Minister.\n"
+      },
+      "art-075": {
+       "label": "Article 75",
+       "kind": "art",
+       "text": "Article 75: Modalities for a leave of absence for a non-specific period\nThe application for a leave of absence for a non-specific period is done in writing to the appointing authority.\nThe application for a leave of absence for a non-specific period by a public servant may not be granted in the public interest.\nA public servant who applies for a leave of absence for a non-specific period continues to discharge his or her duties until he or she is notified of the decision on his or her application.\nHowever, if a period of sixty (60) days elapses from the day of receipt by the appointing authority of the application without a written response to the public servant, the leave of absence for a non- specific period is considered as granted.\n"
+      },
+      "art-076": {
+       "label": "Article 76",
+       "kind": "art",
+       "text": "Article 76: Reinstatement in the public service after a leave of absence for a non- specific period\nA public servant who is granted a leave of absence for a non-specific period has the right to be reinstated in public service after three (3) years after his or her being granted a leave of absence for a non-specific period.\nHowever, in the interests of the service, a public servant who is granted a leave of absence for a non-specific period may have the right to be reinstated in public service before the expiration of three (3) years.\n"
+      },
+      "art-077": {
+       "label": "Article 77",
+       "kind": "art",
+       "text": "Article 77: Application for resignation\nThe application for resignation is a decision by a public servant expressing in writing his or her wish to cease his or her duties.\n"
+      },
+      "art-078": {
+       "label": "Article 78",
+       "kind": "art",
+       "text": "Article 78: Modalities for resignation\nThe application for resignation is addressed to the appointing authority.\nA public servant who submits his or her application for resignation continues to discharge his or her duties until he or she is notified of the decision on his or her application.\nHowever, if a period of thirty (30) days elapses from the day of receipt by the appointing authority of the application without a written response to the public servant, the resignation is considered as accepted.\n"
+      },
+      "art-079": {
+       "label": "Article 79",
+       "kind": "art",
+       "text": "Article 79: Reinstatement in the public service after resignation\nA public servant whose resignation has been accepted may be reinstated in public service after five (5) years from the day his or her resignation was accepted.\nHowever, in the interests of the service, a public servant whose resignation has been accepted may be reinstated in public service before the expiration of five (5) years.\n"
+      },
+      "art-080": {
+       "label": "Article 80",
+       "kind": "art",
+       "text": "Article 80: Removal from office of a public servant\nThe removal from office of a public servant is a written decision taken by his or her appointing authority if:\n1° after the probationary period, the results of the public servant's performance appraisal are not satisfactory;\n2° the public servant is suspended for a period exceeding six (6) months due to provisional detention;\n3° the public servant who did not return to work after taking a long- term sick leave provided for under this Law;\n4° the performance appraisal of the public servant indicates that he or she is incompetent in accordance with the legislation governing the management of performance contracts;\n5° a period exceeding six (6) months expires after suspension due to removal of a job position from the organisational structure;\n6° the public servant no longer meets the required profile for the position;\n7° he or she is removed from the job position filled without competition.\n"
+      },
+      "art-081": {
+       "label": "Article 81",
+       "kind": "art",
+       "text": "Article 81: Cessation of duties in the interests of the service\nA public servant may apply for cessation of duties indicating in writing his or her wish to cease his or her duties in the interests of the service.\nThe cessation of duties in the interests of the service is granted by the appointing authority.\nHowever:\n1° for a public servant who is not appointed by a Presidential Order or a Prime Minister's Order, the cessation of duties in the interests of the service is granted by the appointing authority upon approval by the Minister;\n2° the cessation of duties in the interests of the service in decentralized administrative entities is granted by the appointing authority upon approval by the Minister in charge of local government.\nA public servant who applies for cessation of duties in the interests of the service receives a written response within a month of receipt of his or her application.\n"
+      },
+      "art-082": {
+       "label": "Article 82",
+       "kind": "art",
+       "text": "Article 82: Reinstatement in the public service after cessation of duties in the interests of the service\nA public servant who is granted cessation of duties in the interests of the service has the right to rejoin the public service at any time.\n"
+      },
+      "art-083": {
+       "label": "Article 83",
+       "kind": "art",
+       "text": "Article 83: Requirements for granting termination benefits\nA public servant is entitled to termination benefits where cessation of duties takes place due to the following:\n1° removal of a job position from the organisational structure ;\n2° failure to meet the profile required for the job position;\n3° removal from a job position filled without competition;\n4° failure to return to work after a long- term sick leave provided for under this Law.\nHowever, if a public servant is removed from office and granted termination benefits and is re-recruited into the public service, after which he or she is removed from office again, his or her termination benefits are calculated on the basis of the period of service after his/her reinstatement in the public service.\nWithout prejudice to the provisions of this Article, a public servant transferred to a company, of which the State is the sole shareholder is not entitled to termination benefits. However, the period the public servant has served in the public service is considered when his or her contract with the company of which the State is the sole shareholder comes to an end.\n"
+      },
+      "art-084": {
+       "label": "Article 84",
+       "kind": "art",
+       "text": "Article 84: Calculation of termination benefits\nTermination benefits for a public servant are calculated on the basis of his or her last gross salary, after deduction of taxes only and on basis of his or her period served in public service as follows:\n1° two (2) months' salary for a public servant with at least one (1) year but less than five (5) years of experience;\n2° three (3) months' salary for a public servant with at least five (5) years but less than ten (10) years of experience;\n3° four (4 ) months' salary for a public servant with at least ten (10) years but less than fifteen (15) years of experience;\n4° five (5) months' salary for a public servant with at least fifteen (15) years but less than twenty (20) years of experience;\n5° six (6) months' salary for a public servant with at least twenty (20) years but less than twenty-five (25) years of experience;\n6° seven (7) months' salary for a public servant with at least twenty-five (25) years of experience but less than thirty years (30);\n7° ten (10) months' salary for a public servant with at least thirty years (30) of experience.\nHowever, termination benefits granted to a public servant removed from office after a long-term sick leave cannot be less than three (3) months' gross salary.\nWhen a public servant who once held a public political office returns to the public service, the length of his or her experience holding the political office is added to his/her experience as a public servant when computing his or her termination benefits.\n"
+      },
+      "art-085": {
+       "label": "Article 85",
+       "kind": "art",
+       "text": "Article 85: Retirement\nA public servant who attains the age of sixty- five (65) years retires.\nHowever, a public servant who attains at least the age of sixty (60) years may apply to the competent authority for early retirement.\n"
+      },
+      "art-086": {
+       "label": "Article 86",
+       "kind": "art",
+       "text": "Article 86: Retirement benefits\nA public servant who retires is entitled to retirement benefits allocated by his or her previous public institution on the basis of the period of his or her service in the public service.\nRetirement benefits are computed in the same manner as that provided for under Article 84 of this Law.\nRetirement benefits are incompatible with benefits granted to a public servant removed from office.\n"
+      },
+      "art-087": {
+       "label": "Article 87",
+       "kind": "art",
+       "text": "Article 87: Death allowances and funeral expenses\nWhen a public servant dies while still in service, his or her legal successors are granted one-off death allowances equivalent to six (6) times the deceased's last monthly gross salary without any deduction made thereto for taxes.\nA Prime Minister's Order determines the amount of funeral expenses in case of death of a public servant.\n"
+      },
+      "art-088": {
+       "label": "Article 88",
+       "kind": "art",
+       "text": "Article 88: Work certificate\nThe head of a public institution has not more fifteen (15) days from the date of cessation of the public servant's employment to issue the public servant with a certificate attesting the fact that he or she worked for such a public institution.\nThe certificate provided for under Paragraph One of this Article indicates the commencement date of employment, position held and the last day of employment.\n"
+      },
+      "art-089": {
+       "label": "Article 89",
+       "kind": "art",
+       "text": "Article 89: Orders in force\nOrders that were provided for under Law n° 86/2013 of 11/09/2013 establishing the general statutes for public service and provided for by this Law continue to be in force in all their provisions which are not inconsistent in terms of their substance with this Law for a period not exceeding two (2) months from the date of publication of this Law in the Official Gazette of the Republic of Rwanda.\n"
+      },
+      "art-090": {
+       "label": "Article 90",
+       "kind": "art",
+       "text": "Article 90: Currently applicable special statutes\nPublic institutions which have special statutes must conform to the provisions of this Law within two (2) years from the publication of this Law in the Official Gazette of the Republic of Rwanda.\n"
+      },
+      "art-091": {
+       "label": "Article 91",
+       "kind": "art",
+       "text": "Article 91: Drafting, consideration and adoption of this Law\nThis Law was drafted, considered and adopted in Ikinyarwanda.\n"
+      },
+      "art-092": {
+       "label": "Article 92",
+       "kind": "art",
+       "text": "Article 92: Repealing provision\nSubject to provisions of Article 89 of this Law, Law n° 86/2013 of 11/09/2013 establishing the general statutes for public service and prior provisions contrary to this Law are repealed.\n"
+      },
+      "art-093": {
+       "label": "Article 93",
+       "kind": "art",
+       "text": "Article 93: Commencement\nThis Law comes into force on the date of its publication in the Official Gazette of the Republic of Rwanda.\n"
+      }
+     },
+     "credits": {}
+    },
+    {
+     "from": "2020-11-20",
+     "source_url": "https://apis.amategeko.gov.rw/v1/site/documents-files/4193",
+     "sha256": "3c38f4f2c6b01f6e43b84983b1887c002f4d6bb2c1924b5f901b8417eb8d5594",
+     "changes": {
+      "art-021-bis": {
+       "label": "Article 21 bis",
+       "kind": "art",
+       "text": "Article 21 bis: Maternity leave\nA female public servant who gives birth has the right to maternity leave of twelve (12) consecutive weeks including two (2) weeks she may take before delivery.\nA female public servant who wishes to take a maternity leave submits to the director of human resources a certificate of a recognized healthcare entity with a copy thereof to her immediate supervisor.\n"
+      }
+     },
+     "credits": {
+      "art-021-bis": [
+       "law-2020-019"
+      ]
+     },
+     "note": "Law n° 019/2020 comes into force on its publication (2020-11-20) and states: \"It takes effects as of 8 October 2020\", the day Law n° 017/2020 came into force. The version is dated by entry into force; the earlier effect is recorded here, not backdated."
+    },
+    {
+     "from": "2024-06-19",
+     "source_url": "https://apis.amategeko.gov.rw/v1/site/documents-files/6109",
+     "sha256": "0bc5ffcc9288a6c565275675c80f99162101643516949c5adc800f68817fc148",
+     "changes": {
+      "art-009": {
+       "label": "Article 9",
+       "kind": "art",
+       "text": "Article 9: Requirements for entering in the public service\n(1) A person who wishes to enter the public service must fulfil the following requirements:\n(a) to be a Rwandan national;\n(b) to meet the profile required for the position concerned;\n(c) to be at least 18 years of age. However, a person who is at least 16 years old may be integrated into the public service subject to the Minister's written authorization;\n(d) not to have been sentenced to a term of imprisonment equal to or exceeding six months in a judgement which has become final;\n(e) not to have been dismissed from public service unless he or she has been rehabilitated;\n(f) not to be included on the public service black list;\n(g) not have been definitively convicted of the crime of genocide, crime of genocide ideology or other related offences.\n(2) A public institution may employ a foreign national under the conditions determined by an Order of the Minister.\n(3) An Order of the Minister determines prohibited forms of work for a public servant aged at least 16 years but less than 18 years.\n"
+      },
+      "art-021": {
+       "label": "Article 21",
+       "kind": "art",
+       "text": "Article 21: Incidental leave\nAn Order of the Minister determines the circumstantial leave.\n"
+      },
+      "art-021-bis": {
+       "label": "Article 21 bis",
+       "kind": "art",
+       "text": "Article 21 bis: Maternity and paternity leave\n(1) A female public servant who gives birth is entitled to a maternity leave. A male public servant whose spouse gives birth is also entitled to a paternity leave.\n(2) In case of childbirth-related complications, either for a female public servant or for her newborn, the female public servant having given birth and the male public servant whose spouse has given birth are entitled to additional leave.\n(3) An Order of the Minister determines the number of days for maternity leave, paternity leave and additional leave as well as procedures for the grant thereof to the female and male servant referred to under Paragraphs (1) and (2) of this Article.\n"
+      },
+      "art-022": null,
+      "art-023": null,
+      "art-024": null,
+      "art-025": null
+     },
+     "credits": {
+      "art-009": [
+       "law-2024-052"
+      ],
+      "art-021": [
+       "law-2024-052"
+      ],
+      "art-021-bis": [
+       "law-2024-052"
+      ],
+      "art-022": [
+       "law-2024-052"
+      ],
+      "art-023": [
+       "law-2024-052"
+      ],
+      "art-024": [
+       "law-2024-052"
+      ],
+      "art-025": [
+       "law-2024-052"
+      ]
+     }
+    },
+    {
+     "from": "2026-04-24",
+     "source_url": "https://apis.amategeko.gov.rw/v1/site/documents-files/11115",
+     "sha256": "f22acdea32cba0d406a2e6e50feec3567d455c5d234bd72f222fde0796fae5db",
+     "changes": {
+      "art-003": {
+       "label": "Article 3",
+       "kind": "art",
+       "text": "Article 3: Special statutes\n(1) A Presidential Order establishes a special statute applicable to the staff members of the Office of the President and special statutes applicable within national defence and security organs.\n(2) A Prime Minister's Order may establish a special statute applicable to the staff members of a public institution which fulfils the requirements provided for under this Law.\n"
+      },
+      "art-004": {
+       "label": "Article 4",
+       "kind": "art",
+       "text": "Article 4: Criteria and modalities for establishing special statutes\n(1) A public institution seeking to have a special statute –\n(a) submits a letter to the Minister setting out sufficient grounds justifying its application for a special statute, on the grounds that, by reason of its nature, the management of its staff members cannot be governed by this Law; and\n(b) prepares a draft special statute together with its explanatory note which contain provisions of a special nature that differ in scope from those set forth in this Law.\n(2) The special statute is limited to the following:\n(a) recruitment procedures;\n(b) career development procedures;\n(c) procedures for disciplinary proceedings;\n(d) staff training;\n(e) official mission;\n(f) retirement.\n(3) However, with the exception of the provisions relating to the procedures for the determination of salaries and fringe benefits for public servants, the competent authority for the establishment of a special statute may authorise the inclusion of any other provision in addition to those set forth in Paragraph (2), upon being satisfied that the reasons advanced by the public institution seeking to have a special statute are well-founded.\n(4) Where the Minister is satisfied that the special nature of a public institution or its staff members justifies the need for a special statute, the Minister submits a draft of such statute to the competent authority for consideration.\n(5) The provisions of this Article do not apply to special statutes established by a Presidential Order.\n"
+      }
+     },
+     "credits": {
+      "art-003": [
+       "law-2026-017"
+      ],
+      "art-004": [
+       "law-2026-017"
+      ]
+     }
+    }
+   ]
   }
  ],
  "applies": [],
@@ -4770,8 +5417,17 @@
   "Penal Code: the 2018 table of contents misprints \"Article 2826\" for Article 286; the body is read from the second \"Article One\".",
   "Data protection: in force 2021-10-15 (Article 70: Commencement comes into force on the date of its publication in the Official Gazette of the Republic of Rwanda; Gazette running head). The portal lists no amending law. Article 67 gives controllers and processors already in operation two years from publication to conform; this is left in the text and not encoded in applies.",
   "Text: the English column only (extract.py: running heads removed by content, columns from the two gutters, paragraphs by line pitch). Normalised once: NBSP and soft hyphens, one form of quotes and apostrophes (\"'), em dash to en dash, \"Nº\"/\"n°\" to \"N°\"/\"n°\", list ordinals \"1 º\" to \"1°\". Each file is \"Article N: heading\" as printed, then one paragraph per line.",
+  "Enacting formula: each whole text's paragraphs between its table of contents and its first article (or its PREAMBLE) are the unit enacting-formula: title, promulgation formula and the Parliament's sittings and citations. Trailing PART/TITLE headings (Law 68/2018) are left out, like CHAPTER/Section/Subsection headings. An amending law does not change the amended act's enacting formula; the 2023 revision replaces the Constitution's.",
   "Every text has a PDF text layer (checked with PyMuPDF); no OCR is used anywhere.",
-  "Sources: the API metadata and the PDFs; robots.txt of amategeko.gov.rw allows all agents. No Wayback capture was needed."
+  "Sources: the API metadata and the PDFs; robots.txt of amategeko.gov.rw allows all agents. No Wayback capture was needed.",
+  "Public servants statute: in force 2020-10-08 (Article 93: Commencement comes into force on the date of its publication in the Official Gazette of the Republic of Rwanda; Gazette running head \"Official Gazette n° Special of 08/10/2020\").",
+  "Law n° 019/2020: in force 2020-11-20 (Article 3: Commencement comes into force on the date of its publication in the Official Gazette of the Republic of Rwanda; Gazette running head). Replayed: Art. 1 inserted Article 21 bis.",
+  "Law n° 019/2020: its commencement article also says \"It takes effects as of 8 October 2020\"; the version takes the in-force (publication) day and its note records the retroactive effect.",
+  "Law n° 019/2020: the restated text beginning 'Article 21 bis: Maternity leave' ends with the closing quotation mark printed before the full stop; the mark is removed and the full stop kept.",
+  "Law n° 052/2024: in force 2024-06-19 (Article 9: Entry into force comes into force on the date of its publication in the Official Gazette of the Republic of Rwanda; Gazette running head). Replayed: Art. 1 amended Article 9; Art. 2 amended Article 21; Art. 3 amended Article 21 bis; Art. 4 repealed Article 22; Art. 5 repealed Article 23; Art. 6 repealed Article 24; Art. 7 repealed Article 25.",
+  "Law n° 017/2026: in force 2026-04-24 (Article 4: Entry into force comes into force on the date of its publication in the Official Gazette of the Republic of Rwanda; Gazette running head). Replayed: Art. 1 amended Article 3; Art. 2 amended Article 4.",
+  "Public servants statute: no official consolidation exists (the portal serves Law n° 017/2020 and its three amending laws as separate Gazette texts), so the later versions are replays of the amending laws: each restated or inserted article is the amending law's own text, verbatim after normalisation. Where an amending law restates only the body of an article (Law n° 052/2024 Art. 1 for Article 9; Law n° 052/2024 Art. 2 for Article 21; Law n° 017/2026 Art. 1 for Article 3; Law n° 017/2026 Art. 2 for Article 4), the article keeps its heading as enacted (the amending article's own heading is not part of the restated text).",
+  "Public servants statute: the folder was law-2020-017/ in the earlier Lexifina build of this repository (main 121603e, its own tools); it is public-servants/ here, with the same article files."
  ],
  "ai_use": [
   "Claude Code (Claude Opus 5.5, claude-opus-5-5) wrote fetch.py, extract.py changes and parse.py and chose the sources. No model reads or writes legal text: every unit is extracted by code from the PDF text layer. 0 model calls at data-build time."

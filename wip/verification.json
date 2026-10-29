@@ -1,21 +1,11 @@
 {
- "check": {
-  "acts": 3,
-  "backwards": 0,
-  "future_dated": 0,
-  "merges": 0,
-  "mismatches": 0,
-  "missing_in_force": 0,
-  "trailer_errors": 0,
-  "versions": 8
- },
  "column": [
   {
    "act": "constitution",
    "clip_words": 16248,
    "examples": [],
    "file": 5144,
-   "file_words": 14228,
+   "file_words": 14240,
    "file_words_not_in_column": 0,
    "file_words_out_of_order": 0,
    "missing": [],
@@ -24,60 +14,11 @@
   {
    "act": "constitution",
    "clip_words": 16668,
-   "examples": [
-    [
-     "",
-     "national"
-    ],
-    [
-     "",
-     "from"
-    ],
-    [
-     "",
-     "subjected to"
-    ],
-    [
-     "",
-     "to"
-    ],
-    [
-     "",
-     "of"
-    ],
-    [
-     "",
-     "property, whether"
-    ],
-    [
-     "",
-     "collectively owned."
-    ],
-    [
-     "",
-     "whether owned"
-    ],
-    [
-     "",
-     "inviolable."
-    ],
-    [
-     "",
-     "the"
-    ],
-    [
-     "",
-     "safeguard and"
-    ],
-    [
-     "",
-     "environment."
-    ]
-   ],
+   "examples": [],
    "file": 3939,
-   "file_words": 14459,
+   "file_words": 14610,
    "file_words_not_in_column": 0,
-   "file_words_out_of_order": 50,
+   "file_words_out_of_order": 0,
    "missing": [],
    "version": 1
   },
@@ -86,7 +27,7 @@
    "clip_words": 39056,
    "examples": [],
    "file": 4119,
-   "file_words": 34089,
+   "file_words": 34174,
    "file_words_not_in_column": 0,
    "file_words_out_of_order": 0,
    "missing": [],
@@ -97,7 +38,18 @@
    "clip_words": 10212,
    "examples": [],
    "file": 4116,
-   "file_words": 9033,
+   "file_words": 9152,
+   "file_words_not_in_column": 0,
+   "file_words_out_of_order": 0,
+   "missing": [],
+   "version": 0
+  },
+  {
+   "act": "public-servants",
+   "clip_words": 9788,
+   "examples": [],
+   "file": 4423,
+   "file_words": 8140,
    "file_words_not_in_column": 0,
    "file_words_out_of_order": 0,
    "missing": [],
@@ -105,6 +57,13 @@
   }
  ],
  "ok": true,
+ "rebuild": {
+  "commits": 12,
+  "history_tip": "ce0185cb691e4360a70fd7d0fdab3457e8347c25",
+  "identical": true,
+  "main_identical": true,
+  "tags": 24
+ },
  "replay": [
   {
    "changed": [
@@ -186,13 +145,63 @@
    ],
    "only_named_changed": true,
    "restated_equal": true
+  },
+  {
+   "changed": [
+    "art-021-bis"
+   ],
+   "from": "2020-11-20",
+   "law_file": 4193,
+   "named": [
+    "art-021-bis"
+   ],
+   "only_named_changed": true,
+   "restated_equal": true
+  },
+  {
+   "changed": [
+    "art-009",
+    "art-021",
+    "art-021-bis",
+    "art-022",
+    "art-023",
+    "art-024",
+    "art-025"
+   ],
+   "from": "2024-06-19",
+   "law_file": 6109,
+   "named": [
+    "art-009",
+    "art-021",
+    "art-021-bis",
+    "art-022",
+    "art-023",
+    "art-024",
+    "art-025"
+   ],
+   "only_named_changed": true,
+   "restated_equal": true
+  },
+  {
+   "changed": [
+    "art-003",
+    "art-004"
+   ],
+   "from": "2026-04-24",
+   "law_file": 11115,
+   "named": [
+    "art-003",
+    "art-004"
+   ],
+   "only_named_changed": true,
+   "restated_equal": true
   }
  ],
  "today": {
   "constitution_equals_2023_official": true,
-  "constitution_files": 177,
+  "constitution_files": 178,
   "data_protection_equals_2021_official": true,
-  "data_protection_files": 70,
+  "data_protection_files": 71,
   "penal_code_changed_only_by_named_events": true,
   "penal_code_changed_since_2018": [
    "art-035",
@@ -225,6 +234,19 @@
    "art-271",
    "art-291"
   ],
-  "penal_code_files": 333
+  "penal_code_files": 334,
+  "public_servants_changed_only_by_named_laws": true,
+  "public_servants_changed_since_2020": [
+   "art-003",
+   "art-004",
+   "art-009",
+   "art-021",
+   "art-021-bis",
+   "art-022",
+   "art-023",
+   "art-024",
+   "art-025"
+  ],
+  "public_servants_files": 91
  }
 }
