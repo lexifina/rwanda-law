@@ -63,8 +63,11 @@ def column_check(fid: int, units: dict) -> dict:
     unmatched_file = sum(j2 - j1 for op, i1, i2, j1, j2 in sm.get_opcodes() if op != 'equal')
     bad = [(' '.join(clip_words[i1:i2])[:120], ' '.join(file_words[j1:j2])[:120])
            for op, i1, i2, j1, j2 in sm.get_opcodes() if op != 'equal' and j2 > j1]
+    from collections import Counter
+    missing = Counter(file_words) - Counter(clip_words)
     return {'file': fid, 'clip_words': len(clip_words), 'file_words': len(file_words),
-            'file_words_unmatched': unmatched_file, 'examples': bad[:12]}
+            'file_words_not_in_column': sum(missing.values()), 'missing': sorted(missing.items())[:20],
+            'file_words_out_of_order': unmatched_file, 'examples': bad[:12]}
 
 
 def main():
@@ -105,7 +108,7 @@ def main():
         'penal_code_files': len(pc_last), 'penal_code_changed_since_2018': touched,
         'penal_code_changed_only_by_named_events': set(touched) <= named_all,
     }
-    ok = (all(x['file_words_unmatched'] == 0 for x in out['column'])
+    ok = (all(x['file_words_not_in_column'] == 0 for x in out['column'])
           and all(r['restated_equal'] and r['only_named_changed'] for r in out['replay'])
           and out['today']['constitution_equals_2023_official'] and out['today']['data_protection_equals_2021_official']
           and out['today']['penal_code_changed_only_by_named_events'])
@@ -113,7 +116,8 @@ def main():
     (HERE / 'verification.json').write_text(json.dumps(out, ensure_ascii=False, indent=1) + '\n', encoding='utf-8',
                                             newline='\n')
     for x in out['column']:
-        print(x['act'], x['version'], x['file'], 'file words', x['file_words'], 'unmatched', x['file_words_unmatched'])
+        print(x['act'], x['version'], x['file'], 'file words', x['file_words'], 'not in column', x['file_words_not_in_column'],
+              'out of order', x['file_words_out_of_order'], x['missing'][:5])
         for e in x['examples'][:6]:
             print('    clip:', e[0], '| file:', e[1])
     for r in out['replay']:

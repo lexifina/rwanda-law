@@ -6,7 +6,9 @@
    "file": 5144,
    "clip_words": 16250,
    "file_words": 14228,
-   "file_words_unmatched": 0,
+   "file_words_not_in_column": 0,
+   "missing": [],
+   "file_words_out_of_order": 0,
    "examples": []
   },
   {
@@ -15,7 +17,9 @@
    "file": 3939,
    "clip_words": 16668,
    "file_words": 14459,
-   "file_words_unmatched": 50,
+   "file_words_not_in_column": 0,
+   "missing": [],
+   "file_words_out_of_order": 50,
    "examples": [
     [
      "",
@@ -73,7 +77,62 @@
    "file": 4119,
    "clip_words": 39450,
    "file_words": 34392,
-   "file_words_unmatched": 299,
+   "file_words_not_in_column": 60,
+   "missing": [
+    [
+     "10°",
+     1
+    ],
+    [
+     "11°",
+     1
+    ],
+    [
+     "14°",
+     1
+    ],
+    [
+     "1°",
+     6
+    ],
+    [
+     "2°",
+     20
+    ],
+    [
+     "3°",
+     15
+    ],
+    [
+     "4°",
+     2
+    ],
+    [
+     "5°",
+     3
+    ],
+    [
+     "6°",
+     4
+    ],
+    [
+     "7°",
+     2
+    ],
+    [
+     "8°",
+     2
+    ],
+    [
+     "9°",
+     2
+    ],
+    [
+     "d'une",
+     1
+    ]
+   ],
+   "file_words_out_of_order": 299,
    "examples": [
     [
      "",
@@ -131,7 +190,9 @@
    "file": 4116,
    "clip_words": 10216,
    "file_words": 9033,
-   "file_words_unmatched": 0,
+   "file_words_not_in_column": 0,
+   "missing": [],
+   "file_words_out_of_order": 0,
    "examples": []
   }
  ],
