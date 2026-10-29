@@ -4,7 +4,7 @@
    "act": "constitution",
    "version": 0,
    "file": 5144,
-   "clip_words": 16250,
+   "clip_words": 16248,
    "file_words": 14228,
    "file_words_not_in_column": 0,
    "missing": [],
@@ -75,120 +75,18 @@
    "act": "penal-code",
    "version": 0,
    "file": 4119,
-   "clip_words": 39450,
-   "file_words": 34392,
-   "file_words_not_in_column": 60,
-   "missing": [
-    [
-     "10°",
-     1
-    ],
-    [
-     "11°",
-     1
-    ],
-    [
-     "14°",
-     1
-    ],
-    [
-     "1°",
-     6
-    ],
-    [
-     "2°",
-     20
-    ],
-    [
-     "3°",
-     15
-    ],
-    [
-     "4°",
-     2
-    ],
-    [
-     "5°",
-     3
-    ],
-    [
-     "6°",
-     4
-    ],
-    [
-     "7°",
-     2
-    ],
-    [
-     "8°",
-     2
-    ],
-    [
-     "9°",
-     2
-    ],
-    [
-     "d'une",
-     1
-    ]
-   ],
-   "file_words_out_of_order": 299,
-   "examples": [
-    [
-     "",
-     "1°"
-    ],
-    [
-     "",
-     "2°"
-    ],
-    [
-     "",
-     "1°"
-    ],
-    [
-     "",
-     "2°"
-    ],
-    [
-     "",
-     "3°"
-    ],
-    [
-     "",
-     "4°"
-    ],
-    [
-     "",
-     "5°"
-    ],
-    [
-     "",
-     "6°"
-    ],
-    [
-     "",
-     "7°"
-    ],
-    [
-     "",
-     "8°"
-    ],
-    [
-     "",
-     "9°"
-    ],
-    [
-     "",
-     "1°"
-    ]
-   ]
+   "clip_words": 39056,
+   "file_words": 34089,
+   "file_words_not_in_column": 0,
+   "missing": [],
+   "file_words_out_of_order": 0,
+   "examples": []
   },
   {
    "act": "data-protection",
    "version": 0,
    "file": 4116,
-   "clip_words": 10216,
+   "clip_words": 10212,
    "file_words": 9033,
    "file_words_not_in_column": 0,
    "missing": [],
@@ -318,5 +216,5 @@
   ],
   "penal_code_changed_only_by_named_events": true
  },
- "ok": false
+ "ok": true
 }

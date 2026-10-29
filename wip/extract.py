@@ -5,7 +5,8 @@ No AI, no fuzzy edits, no guessing: every rule below is positional or textual an
     (all columns, grouped by top edge within 3pt) whose text is exactly "Official Gazette n° Special of DD/MM/YYYY", or
     a row that is a bare number in the top or bottom 75pt of the page.
   - Columns: the two gutters are the two interior x-ranges that almost no word box covers over the whole document
-    (coverage <= 5% of the busiest x); a word belongs to the English column when its centre lies between them.
+    (coverage <= 5% of the busiest x, runs under 12pt apart merged); the English column runs from the start of the
+    left gutter to the start of the right one (item numbers hang into the gutter left of their own column).
   - Lines: English-column words of one page grouped by their top edge (within 3pt), sorted left to right, joined by
     one space. Soft hyphens (U+00AD) are removed.
   - Paragraphs, within a page: a new paragraph starts when the vertical step from the previous line exceeds 1.5 times
