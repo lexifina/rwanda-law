@@ -1,0 +1,109 @@
+{
+ "country": "RW",
+ "acts": [
+  {
+   "slug": "constitution",
+   "short": "Constitution",
+   "title": "The Constitution of the Republic of Rwanda",
+   "url": "https://apis.amategeko.gov.rw/v1/site/documents-files/3939",
+   "versions": [
+    {
+     "from": "2015-12-24",
+     "units": 179,
+     "source_url": "https://apis.amategeko.gov.rw/v1/site/documents-files/5144",
+     "sha256": "1a4a2fb4c74cfc3db29e419a0dfb66c0f68822574b2f41d6e0f66b580d8b202b"
+    },
+    {
+     "from": "2023-08-04",
+     "units": 178,
+     "source_url": "https://apis.amategeko.gov.rw/v1/site/documents-files/3939",
+     "sha256": "1da4499ef20fa31f634abbdc08e09117fbf67190ac91450e95972265d13cbbc8"
+    }
+   ]
+  },
+  {
+   "slug": "penal-code",
+   "short": "Penal Code",
+   "title": "Law n° 68/2018 of 30/08/2018 determining offences and penalties in general",
+   "url": "https://apis.amategeko.gov.rw/v1/site/documents-files/4119",
+   "versions": [
+    {
+     "from": "2018-09-27",
+     "units": 336,
+     "source_url": "https://apis.amategeko.gov.rw/v1/site/documents-files/4119",
+     "sha256": "fcfe52f7961def9235f7f7837386fd9234c0fbee0905fa533b886dfdf6c600f2"
+    },
+    {
+     "from": "2019-04-24",
+     "units": 334,
+     "source_url": "https://apis.amategeko.gov.rw/v1/site/documents-files/6410",
+     "sha256": "c9d1c618615e8e98a354bed13c5cfcbc8bc8c3eaeb96b06fc902c5ca45295bbf"
+    },
+    {
+     "from": "2019-11-29",
+     "units": 333,
+     "source_url": "https://apis.amategeko.gov.rw/v1/site/documents-files/4115",
+     "sha256": "779e01dc63ac85981e9b8cda2194a4905035b4c7fe45ca912bc35ef380b94e8e"
+    },
+    {
+     "from": "2022-05-20",
+     "units": 332,
+     "source_url": "https://apis.amategeko.gov.rw/v1/site/documents-files/8624",
+     "sha256": "228704b87522a8851a33904884f382b9c60824c33b7672d37378fa543f1dabb5"
+    },
+    {
+     "from": "2023-12-05",
+     "units": 334,
+     "source_url": "https://apis.amategeko.gov.rw/v1/site/documents-files/4073",
+     "sha256": "8cb31979af6ee59c39e706095471963036fad36b7010b2a4df7ca260fc78ef21"
+    }
+   ]
+  },
+  {
+   "slug": "data-protection",
+   "short": "Data Protection Law",
+   "title": "Law n° 058/2021 of 13/10/2021 relating to the protection of personal data and privacy",
+   "url": "https://apis.amategeko.gov.rw/v1/site/documents-files/4116",
+   "versions": [
+    {
+     "from": "2021-10-15",
+     "units": 71,
+     "source_url": "https://apis.amategeko.gov.rw/v1/site/documents-files/4116",
+     "sha256": "d32ce8e8823c8b16adf05ef31b99ed2c06af1980fb43d14b7bcde0051d8c81f8"
+    }
+   ]
+  },
+  {
+   "slug": "public-servants",
+   "short": "Public Servants Statute",
+   "title": "Law n° 017/2020 of 07/10/2020 establishing the general statute governing public servants",
+   "url": "https://apis.amategeko.gov.rw/v1/site/documents-files/4423",
+   "versions": [
+    {
+     "from": "2020-10-08",
+     "units": 94,
+     "source_url": "https://apis.amategeko.gov.rw/v1/site/documents-files/4423",
+     "sha256": "241f0fe51edc0d93226188fa38d0252fba33797c4e4995b81594913272f40c7d"
+    },
+    {
+     "from": "2020-11-20",
+     "units": 95,
+     "source_url": "https://apis.amategeko.gov.rw/v1/site/documents-files/4193",
+     "sha256": "3c38f4f2c6b01f6e43b84983b1887c002f4d6bb2c1924b5f901b8417eb8d5594"
+    },
+    {
+     "from": "2024-06-19",
+     "units": 91,
+     "source_url": "https://apis.amategeko.gov.rw/v1/site/documents-files/6109",
+     "sha256": "0bc5ffcc9288a6c565275675c80f99162101643516949c5adc800f68817fc148"
+    },
+    {
+     "from": "2026-04-24",
+     "units": 91,
+     "source_url": "https://apis.amategeko.gov.rw/v1/site/documents-files/11115",
+     "sha256": "f22acdea32cba0d406a2e6e50feec3567d455c5d234bd72f222fde0796fae5db"
+    }
+   ]
+  }
+ ]
+}

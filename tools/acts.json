@@ -1,0 +1,29 @@
+{
+ "acts": [
+  {"slug": "constitution", "texts": [
+   {"file": 5144, "role": "whole", "law": "constitution-2015"},
+   {"file": 3939, "role": "whole", "law": "constitution-revision-2023"}
+  ]},
+  {"slug": "penal-code", "texts": [
+   {"file": 4119, "role": "base", "law": "law-2018-068"},
+   {"file": 4115, "role": "amending", "law": "law-2019-069"},
+   {"file": 4073, "role": "amending", "law": "law-2023-059"}
+  ]},
+  {"slug": "data-protection", "texts": [
+   {"file": 4116, "role": "base", "law": "law-2021-058"}
+  ]},
+  {"slug": "public-servants", "texts": [
+   {"file": 4423, "role": "base", "law": "law-2020-017"},
+   {"file": 4193, "role": "amending", "law": "law-2020-019"},
+   {"file": 6109, "role": "amending", "law": "law-2024-052"},
+   {"file": 11115, "role": "amending", "law": "law-2026-017"}
+  ]}
+ ],
+ "not_used": [
+  {"file": 10837, "why": "The Constitution of 4 June 2003 as published: an image-only scan, no text layer (no OCR)."},
+  {"file": 5149, "why": "Amendment no. 1 of 02/12/2003: the text layer is machine OCR; it also needs the 2003 base."},
+  {"file": 5131, "why": "Amendment no. 2 of 08/12/2005: cannot be replayed without the 2003 base text."},
+  {"file": 5132, "why": "Amendment of 13/08/2008: cannot be replayed without the 2003 base text."},
+  {"file": 11489, "why": "Amendment no. 4 of 17/06/2010: cannot be replayed without the 2003 base text."}
+ ]
+}
