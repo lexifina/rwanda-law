@@ -69,15 +69,24 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--repo', default=str(HERE.parents[2] / 'rwanda-law'))
     ap.add_argument('--record', action='store_true')
+    ap.add_argument('--source-dir', type=Path, help='directory of official PDF and metadata inputs')
     a = ap.parse_args()
     sys.stdout.reconfigure(encoding='utf-8')
     repo = a.repo
+    if a.source_dir:
+        B.S.CACHE = a.source_dir
     evs = B.events(offline=True)
+    import depth_history as D
+    depth = D.events(B.S.CACHE)
+    evs += depth
     log = subprocess.run(['git', 'log', '--reverse', '--first-parent',
                           '--format=%H%x09%an%x09%(trailers:key=In-force,valueonly,separator=)', 'main'],
                          cwd=repo, capture_output=True, text=True, encoding='utf-8').stdout.splitlines()
     law = [l.split('\t') for l in log if l.split('\t')[1] != 'Lexifina']
     problems = []
+    source_problems, source_checks = D.check_sources(B.S.CACHE)
+    problems.extend(source_problems)
+    depth_records = {record['tag']: record for record in D.VERSIONS}
     if len(law) != len(evs):
         problems.append(f'{len(law)} law commits, {len(evs)} expected')
     files_checked = 0
@@ -88,6 +97,16 @@ def main():
             problems.append(f'{tag}: author/date {au} {day} != {author} {eday}')
         # 1
         got = blobs(repo, h, folder)
+        if tag in depth_records:
+            record = depth_records[tag]
+            target = subprocess.run(['git', 'rev-parse', tag + '^{}'], cwd=repo,
+                                    capture_output=True, text=True, encoding='utf-8')
+            if target.returncode or target.stdout.strip() != h:
+                problems.append(f'{tag}: tag does not identify its source-backed law commit')
+            source_hash = subprocess.run(['git', 'show', '-s', '--format=%(trailers:key=Source-sha256,valueonly)', h],
+                                         cwd=repo, capture_output=True, text=True, encoding='utf-8').stdout.strip()
+            if source_hash != record['source_sha256']:
+                problems.append(f'{tag}: commit source digest does not match the official PDF')
         for n in sorted(set(got) | set(files)):
             files_checked += 1
             if got.get(n) != files.get(n):
@@ -137,6 +156,8 @@ def main():
     summary = (f'{len(law)} law commits; {files_checked} file comparisons against the official texts; word checks '
                f'{", ".join(words)}; {len(problems)} problems')
     print(summary)
+    for detail in source_checks:
+        print('DEPTH SOURCE', detail)
     for p in problems:
         print('PROBLEM', p)
     if a.record:

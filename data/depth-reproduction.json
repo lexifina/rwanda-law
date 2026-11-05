@@ -1,0 +1,16 @@
+{
+  "baseline": "121603ed4b20bcbdc22a8a93f0be713d86725b51",
+  "law_head": "237853977372fcf5b7dfc72e06d1aec603863939",
+  "law_commits": 6,
+  "versions": 6,
+  "acts": 4,
+  "tags": {
+    "evidence/2024-062": "2df06880df3c05508a7a4f087e7d953ef267264b",
+    "contracts/2011-045": "f09d2fe2a4e30845d00114781ebea40010825b58",
+    "criminal-procedure/2019-027": "6bc98cd4334668a756ed7d6828083d73fbdfdb67",
+    "criminal-procedure/2023-058": "98bacdca74931c0cbcc94f0d48920e74d101e453",
+    "companies/2021-007": "54e4a70d25db9ebe5e8bd3a5a7839b8bb3429302",
+    "companies/2023-019": "237853977372fcf5b7dfc72e06d1aec603863939"
+  },
+  "stream_sha256": "7cfc0fea2cd4cd5160f832db1e5178e54cfb37732cdf99aded971b40eb36bcf4"
+}

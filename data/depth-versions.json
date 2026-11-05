@@ -1,0 +1,68 @@
+[
+  {
+    "act": "evidence",
+    "from": "2024-06-27",
+    "history": "as enacted",
+    "law": "Law n° 062/2024",
+    "source_url": "https://apis.amategeko.gov.rw/v1/site/documents-files/6138",
+    "source_sha256": "5bf080d2e5bceab25859d73450b9689e1bab3ea7d6a702401bd993abfe5cf04d",
+    "in_force_basis": "Evidence Law: Law n° 062/2024 in force 2024-06-27 (Article 96: Entry into force comes into force on the date of its publication in the Official Gazette of the Republic of Rwanda; Gazette running head). 97 units as enacted.",
+    "file": 6138,
+    "tag": "evidence/2024-062"
+  },
+  {
+    "act": "contracts",
+    "from": "2012-01-23",
+    "history": "as enacted",
+    "law": "Law n° 45/2011",
+    "source_url": "https://apis.amategeko.gov.rw/v1/site/documents-files/4724",
+    "source_sha256": "31f62ae22d11e6a6b5ed9f2f47e159d13bef73bb10d1a2db28036600aac99f30",
+    "in_force_basis": "Contracts Law: Law n° 45/2011 in force 2012-01-23 (Article 165: Commencement shall come into force on the date of its publication in the Official Gazette of the Republic of Rwanda; Gazette running head). 166 units as enacted.",
+    "file": 4724,
+    "tag": "contracts/2011-045"
+  },
+  {
+    "act": "criminal-procedure",
+    "from": "2019-11-08",
+    "history": "as enacted",
+    "law": "Law n° 027/2019",
+    "source_url": "https://apis.amategeko.gov.rw/v1/site/documents-files/4176",
+    "source_sha256": "ce1f3b1fd50bb472ecf76d58f9e8d24ec2e964aef14970c48fe0c61b1f51bb52",
+    "in_force_basis": "Criminal Procedure Law: Law n° 027/2019 in force 2019-11-08 (Article 267: Commencement comes into force on the date of its publication in the Official Gazette of the Republic of Rwanda; Gazette running head). 268 units as enacted.",
+    "file": 4176,
+    "tag": "criminal-procedure/2019-027"
+  },
+  {
+    "act": "criminal-procedure",
+    "from": "2023-12-05",
+    "history": "replayed",
+    "law": "Law n° 058/2023",
+    "source_url": "https://apis.amategeko.gov.rw/v1/site/documents-files/4154",
+    "source_sha256": "83782551a1770c51d5a8d256c409271a0f3e03a6f6e513dcfdd416106eeb9715",
+    "in_force_basis": "Criminal Procedure Law: Law n° 058/2023 in force 2023-12-05 (Article 20: Entry into force comes into force on the date of its publication in the Official Gazette of the Republic of Rwanda; Gazette running head). Replayed: Art. 1 amended Article 15; Art. 2 amended Article 16; Art. 3 inserted Article 16 bis; Art. 4 amended Article 17; Art. 5 amended Article 24; Art. 6 amended Article 49; Art. 7 amended Article 58; Art. 8 amended Article 70; Art. 9 amended Article 72; Art. 10 amended Article 76; Art. 11 inserted Article 169 bis; Art. 12 amended Article 173; Art. 13 amended Article 174; Art. 14 amended Article 199; Art. 15 amended Article 216; Art. 16 amended Article 233; Art. 17 amended Article 234; Art. 18 inserted Article 264 bis.",
+    "file": 4154,
+    "tag": "criminal-procedure/2023-058"
+  },
+  {
+    "act": "companies",
+    "from": "2021-02-08",
+    "history": "as enacted",
+    "law": "Law n° 007/2021",
+    "source_url": "https://apis.amategeko.gov.rw/v1/site/documents-files/5095",
+    "source_sha256": "ac85f49abff32c6907dbcd7aa95fd858ad366619f31d9850cbc8163f6fee4e68",
+    "in_force_basis": "Companies Law: Law n° 007/2021 in force 2021-02-08 (Article 362: Commencement comes into force on the date of its publication in the Official Gazette of the Republic of Rwanda; Gazette running head). 363 units as enacted.",
+    "file": 5095,
+    "tag": "companies/2021-007"
+  },
+  {
+    "act": "companies",
+    "from": "2023-03-30",
+    "history": "replayed",
+    "law": "Law n° 019/2023",
+    "source_url": "https://apis.amategeko.gov.rw/v1/site/documents-files/5053",
+    "source_sha256": "a69c57cc013db304ff7106cbc61d632e8e7b7659eafba077047a70f49d45955c",
+    "in_force_basis": "Companies Law: Law n° 019/2023 in force 2023-03-30 (Article 24: Commencement comes into force on the date of its publication in the Official Gazette of the Republic of Rwanda; Gazette running head). Replayed: Art. 1 amended Article 2; Art. 2 amended Article 19; Art. 3 amended Article 57; Art. 4 amended Article 111; Art. 5 amended Article 114; Art. 6 amended Article 115; Art. 7 amended Article 116; Art. 8 inserted Article 116 bis; Art. 9 inserted Article 116 ter; Art. 10 amended Article 120; Art. 11 amended Article 143; Art. 12 amended Article 172; Art. 13 amended Article 247; Art. 14 amended Article 252; Art. 15 amended Article 257; Art. 16 amended Article 269; Art. 17 amended Article 287; Art. 18 amended Article 288; Art. 19 amended Article 326; Art. 20 amended Article 327; Art. 21 amended Article 352; Art. 22 inserted Article 354 bis.",
+    "file": 5053,
+    "tag": "companies/2023-019"
+  }
+]

@@ -1,7 +1,7 @@
 # Reproducing this repository
 
 Built by `tools/build.py` from the Rwanda Law Reform Commission's open API on amategeko.gov.rw. Data retrieved
-2026-10-28. robots.txt allows all agents (`User-agent: *`, empty `Disallow:`).
+2026-10-28.
 
 ## Sources
 
@@ -60,3 +60,14 @@ are removed: the opening mark of the first paragraph, and the closing mark of th
 - check_repo: 6 law commits; 728 file comparisons against the official texts; word checks 5144:equal, 3939:equal, 4423:equal, 4193:equal, 6109:equal, 11115:equal, constitution/2015 files:equal, law-2020-017/2020-017 files:equal, constitution/2023 files:equal; 0 problems
 - test_repo: 6/6 passed
 - determinism: `--verify-rebuild` gives the same `main` hash
+
+
+## Additional source-backed history
+
+The original build above describes the Constitution and public servants statute. Six appended law commits add four acts, with all base files reconstructed from official text-layer PDFs and both amendments replayed. Chapter, section and subsection context is retained. Complete bodies and restatements are checked against an independent PDF word-position stream.
+
+In a disposable clone at the baseline in `data/depth-reproduction.json`, reconstruct the additional source-backed history with `python tools/build.py --append-depth --repo <clone> --source-dir <official-input-dir> --today 2026-11-05`. Official inputs are the twelve PDFs named `file-<id>.pdf` and the six original metadata files named `meta-<id>.json`; source identifiers and SHA-256 values are recorded in this file and `data/depth-versions.json`. No previously parsed data is an input.
+
+Validate the complete collection with `python tools/check_repo.py --repo <clone> --source-dir <official-input-dir>` and `python tools/test_repo.py --repo <clone>`. The checker requires exactly twelve source-backed law commits, checks all files and validates the six added source digests and tags. Missing inputs or unknown replay grammar fail. The frozen law block can also be reproduced with `python tools/reproduce_depth_history.py --repo <baseline-clone>`; that verifies hashes and tags only, separately from official-source checks.
+
+AI assistance authored code and documentation. No model wrote, translated or corrected legal text, and no OCR is used.

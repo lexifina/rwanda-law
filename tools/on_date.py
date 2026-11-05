@@ -58,8 +58,18 @@ def main():
             sys.exit(f'{act}/{name} was not in the text on {day}.')
         return
     files = [f for f in git('ls-tree', '-r', '--name-only', commit, f'{act}/').split('\n') if f.endswith('.md')]
-    for f in sorted(files, key=order):
-        sys.stdout.write(git('show', f'{commit}:{f}') + '\n')
+    ordered = sorted(files, key=order)
+    request = ''.join(f'{commit}:{name}\n' for name in ordered).encode('utf-8')
+    result = subprocess.run(['git', 'cat-file', '--batch'], input=request, capture_output=True, check=True)
+    data, offset = result.stdout, 0
+    for name in ordered:
+        end = data.index(b'\n', offset)
+        header = data[offset:end].split()
+        if len(header) != 3 or header[1] != b'blob':
+            raise RuntimeError(f'Could not read {commit}:{name}')
+        size = int(header[2])
+        sys.stdout.write(data[end + 1:end + 1 + size].decode('utf-8') + '\n')
+        offset = end + 1 + size + 1
 
 
 if __name__ == '__main__':

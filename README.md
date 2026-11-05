@@ -94,3 +94,17 @@ There is no licence. amategeko.gov.rw says:
 
 This repository is private. **Ask the Rwanda Law Reform Commission (RLRC) before publishing it.** The Official Gazette
 is the authentic text.
+
+
+## Additional dated history
+
+Evidence, contracts, criminal procedure and companies extend this selected collection. First versions are official texts as enacted; the criminal procedure and companies records replay their named 2023 amendments. Every date follows the source publication and commencement. National coverage and identification of every later amendment remain incomplete.
+
+| Folder | Versions | In force |
+| --- | ---: | --- |
+| `evidence/` | 1 | 2024-06-27 |
+| `contracts/` | 1 | 2012-01-23 |
+| `criminal-procedure/` | 2 | 2019-11-08, 2023-12-05 |
+| `companies/` | 2 | 2021-02-08, 2023-03-30 |
+
+Sources are the English columns of the Official Gazette PDFs supplied by the Rwanda Law Reform Commission; the Ministry of Justice publishes the Gazette. No OCR is used. These six source texts contain no normative images; the evidence and companies covers carry decorative national emblems. See `data/depth-versions.json` and `REPRODUCE.md`.

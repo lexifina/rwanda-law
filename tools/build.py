@@ -395,7 +395,16 @@ def main():
     ap.add_argument('--offline', action='store_true')
     ap.add_argument('--today', default=None, help='documentation commit day (default: the cache retrieval day)')
     ap.add_argument('--verify-rebuild', action='store_true', help='rebuild into a temporary folder and compare hashes')
+    ap.add_argument('--append-depth', action='store_true', help='append the four source-backed depth acts to a disposable published-baseline clone')
+    ap.add_argument('--source-dir', type=Path, help='official PDF and metadata input directory for --append-depth')
     a = ap.parse_args()
+    if a.append_depth:
+        if a.source_dir is None:
+            ap.error('--append-depth requires --source-dir')
+        import append_depth
+        import json
+        print(json.dumps(append_depth.append(Path(a.repo), a.source_dir, a.today or S.retrieved())), flush=True)
+        return
     sys.stdout.reconfigure(encoding='utf-8')
     today = a.today or S.retrieved()
     if a.verify_rebuild:

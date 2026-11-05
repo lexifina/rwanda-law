@@ -5,11 +5,15 @@
   "language": "en",
   "acts": [
     "constitution",
-    "law-2020-017"
+    "law-2020-017",
+    "evidence",
+    "contracts",
+    "criminal-procedure",
+    "companies"
   ],
   "history_from": "2015-12-24",
   "record_to": "2026-04-24",
-  "record_note": "Constitution from the 2015 revision (2003-2010 texts are scans without a text layer), replaced as a whole by the 2023 revising act; Law n° 017/2020 with three amending laws replayed. English column of the trilingual Official Gazette; data retrieved 2026-10-28.",
+  "record_note": "Constitution from the 2015 revision (2003-2010 texts are scans without a text layer), replaced as a whole by the 2023 revising act; Law n° 017/2020 with three amending laws replayed. English column of the trilingual Official Gazette; data retrieved 2026-10-28. Four additional selected acts are provided as enacted, with the 2023 criminal procedure and companies amendments replayed. Complete national coverage and all subsequent amendments are not asserted.",
   "in_force_trailer": "In-force",
   "built": "2026-10-28",
   "dates": {
@@ -39,5 +43,6 @@
   },
   "checked_on": "2026-10-28",
   "history": "replayed",
-  "verification": "constitution/: both versions (2015 revision, 2023 revising act) are official texts. law-2020-017/: the original law is official; the three later states are replays of the amending laws 019/2020, 052/2024 and 017/2026, with no official consolidation to verify against."
+  "verification": "constitution/: both versions (2015 revision, 2023 revising act) are official texts. law-2020-017/: the original law is official; the three later states are replays of the amending laws 019/2020, 052/2024 and 017/2026, with no official consolidation to verify against.",
+  "depth_versions": "data/depth-versions.json"
 }

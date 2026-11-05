@@ -1,0 +1,8 @@
+{
+  "path": "rw",
+  "code": "RW",
+  "name": "Rwanda",
+  "level": "country",
+  "repo": "https://github.com/lexifina/rwanda-law",
+  "build": "selected collection: 6 acts; official enacted texts, revisions and source-backed amendment replays; national coverage incomplete"
+}
