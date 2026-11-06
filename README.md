@@ -1,5 +1,7 @@
 # Rwandan law as git history (private)
 
+Part of [lexifina/global-law](https://github.com/lexifina/global-law), one git history for every country's law: this is Rwanda's national law, which global-law reads at `rwanda/national/acts/`.
+
 Two Rwandan texts, in English, as a git history: each commit is a law taking effect.
 
 - `constitution/` holds the Constitution of the Republic of Rwanda. **The record starts with the 2015 revision.** The
