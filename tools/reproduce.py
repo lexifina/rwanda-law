@@ -112,6 +112,11 @@ There is no licence. amategeko.gov.rw says:
 This repository is private. **Ask the Rwanda Law Reform Commission (RLRC) before publishing it.** The Official Gazette
 is the authentic text.
 """
+    # Since 2026-11-15 the published README is on the serbia-law model, kept in repo/README.md beside this script;
+    # it replaces the generated one so a rebuild keeps it.
+    _model = here / 'repo' / 'README.md'
+    if _model.is_file() and '## Questions as git commands' in _model.read_text(encoding='utf-8'):
+        readme = _model.read_text(encoding='utf-8')
     (repo / 'README.md').write_text(readme, encoding='utf-8', newline='\n')
     (repo / 'LICENSE').write_text(
         'No licence is granted.\n\nThe texts are from amategeko.gov.rw, whose terms of use say:\n\n'
