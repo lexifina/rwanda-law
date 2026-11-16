@@ -58,6 +58,7 @@ Each change is credited to the law that made it (`Law n° 052/2024`, at an addre
 - `tools/check_repo.py` rebuilds every version from the Gazette PDFs and compares each file, byte for byte, with the extraction of its official text; a word check compares each text with the words of the PDF column itself. It expects all 12 law commits, each with its recorded author, day and source SHA-256.
 - An amending law is replayed only where its article is printed in one of three forms ("is amended as follows", "is inserted to read as follows", "is repealed"); any other wording stops the build, and articles the law does not name must stay byte-identical.
 - Rebuilding from the cached sources gives the same commit hashes (`tools/build.py --verify-rebuild`), and `tools/test_repo.py` checks blame, the dated tool and `git log --follow` on amended articles (see [`REPRODUCE.md`](REPRODUCE.md)).
+- [vulnerabilities/](vulnerabilities/): possible drafting mistakes in this law, found by global-law's detectors and checked by hand. Not run yet.
 
 ## What it does not show
 
@@ -78,6 +79,10 @@ Each change is credited to the law that made it (`Law n° 052/2024`, at an addre
 See [`LICENSE`](LICENSE). No licence is granted: amategeko.gov.rw's terms say the legislation on it is the property of the Rwanda Law Reform Commission (RLRC), and that its texts do not replace those published in the Official Gazette of the Republic of Rwanda, the authentic text; the reuse terms are unclear. The tools in `tools/` are by Lexifina.
 
 No AI model wrote, translated or corrected legal text, and none runs when the history is built; the scripts and documentation were written with an AI model (see [`REPRODUCE.md`](REPRODUCE.md)).
+
+## Visualisations
+
+- [visualisations/](visualisations/): charts drawn from this repository. Not drawn yet.
 
 ## More
 
